@@ -1,0 +1,4407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flipkart</title>
+    <link rel="shortcut icon" href="flipkartlogo1.jpeg" />
+    <script src="jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="flipkat.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".log2").click(function () {
+          $(".logbaar").css({ display: "block" });
+          $(".logpage").css({ display: "block" });
+          // $(".logpage").fadeIn("slow");
+        });
+        $(".logx").click(function () {
+          $(".logbaar").css({ display: "none" });
+          $(".signbaar").css({ display: "none" });
+        });
+        $(".log").click(function () {
+          // $(".logpage").fadeIn("slow");
+        });
+        $(".siglog").click(function () {
+          $(".logbaar").css({ display: "block" });
+          $(".logpage").css({ display: "block" });
+          // $(".logpage").fadeOut("slow");
+
+          $(".signbaar").css({ display: "none" });
+          $(".signpage").css({ display: "none" });
+        });
+        $(".logcr").click(function () {
+          $(".signbaar").css({ display: "block" });
+          $(".signpage").css({ display: "block" });
+          $(".logbaar").css({ display: "none" });
+          $(".logpage").css({ display: "none" });
+        });
+      });
+      $("document").ready(function () {
+        $(".sign").click(function () {
+          $(".signbaar").css({ display: "block" });
+          $(".signpage").css({ display: "block" });
+        });
+      });
+      $("document").ready(function(){
+        $(".mob").click(function(){
+          $(".mobiles").toggle();
+        });
+      })
+    </script>
+    <style>
+      .cont {
+        height: 900px;
+        width: 1480px;
+        padding: 20px 0px;
+        margin: 0px 35.6px;
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: repeat(2, auto);
+        /* grid-row-gap: 10px; */
+        position: relative;
+        bottom: 151px;
+        position: fixed;
+        /* display: flex;
+        flex-direction: ; */
+        /* grid-row-gap: 10px; */
+      }
+      .content {
+        width: 350px;
+        height: 420px;
+        background-color: #ffffff;
+        /* border: 1px solid black; */
+        padding: 20px 0px 15px;
+      }
+      /* body{
+  background-image: url("homepho1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100vh;
+} */
+      .hompho {
+        height: 600px;
+        /* width: 100vw; */
+        position: relative;
+        background-image: url("homepho1.jpg");
+        z-index: -1;
+        /* background-position: left top,right top;
+        background-size:100vw 100px,100vw 100px; */
+        /* background-repeat: repeat; */
+        top: 205px;
+      }
+      /* .hompho2 {
+        height: 600px;
+        /* width: 100vw; */
+      /* position: relative;
+        background-image: url(hompho2.jpg),url(hompho2.jpg);
+        z-index: -1;
+        background-size: 220vh;
+        background-repeat: no-repeat;
+        top: 205px; */
+
+      /* } */
+      body {
+        background-color: #e9e9ea;
+        margin: 0px;
+        /* height: 1000px; */
+        /* background-color: black; */
+        /* height: 10000px; */
+        font-family: Roboto, Arial, sans-serif;
+        /* position: relative; */
+      }
+      html{
+        scroll-behavior: smooth;
+
+      }
+      body::-webkit-scrollbar {
+        display: none;
+      }
+
+      nav {
+        background-color: rgb(255, 254, 254);
+        height: 70px;
+        /* width: ; */
+        width: 1536px;
+        position: fixed;
+        z-index: 5;
+      }
+
+      .serlogo {
+        height: 25px;
+        position: relative;
+        right: 783px;
+        bottom: 8px;
+      }
+
+      .ser::placeholder {
+        font-size: 20px;
+        position: relative;
+        top: 2px;
+      }
+
+      .ser {
+        background-color: #f0f5ff;
+        width: 700px;
+        margin: 11px 50px;
+        font-size: 15px;
+        height: 40px;
+        border-radius: 5px;
+        border-style: none;
+        outline: none;
+        position: relative;
+        bottom: 15px;
+        padding-left: 34px;
+      }
+
+      .flogo {
+        /* margin-left-right: ; */
+        margin-top: 15px;
+        height: 40px;
+        position: relative;
+        left: 18px;
+        bottom: 1px;
+      }
+
+      .log2 {
+        height: 40px;
+        /* width: auto; */
+        /* margin: 2px 0px; */
+        border-radius: 5px;
+        position: relative;
+        bottom: 0px;
+        padding-top: 2px;
+        box-sizing: border-box;
+      }
+
+      .log:hover .log2 {
+        background-color: #f0f5ff;
+        /* color: white; */
+      }
+
+      .log:hover .ang {
+        transform: rotate(180deg);
+        position: relative;
+        bottom: 4px;
+      }
+      .log:hover .logan {
+        display: block;
+      }
+      .log {
+        height: 40px;
+        display: inline-block;
+        position: relative;
+        bottom: 12px;
+        right: 50px;
+        font-size: 20px;
+        /* background-color: blue; */
+        border-radius: 5px;
+      }
+
+      .loginlogo {
+        position: relative;
+        /* bottom: 2px; */
+        top: 6px;
+        margin: 0px 5px;
+      }
+
+      .ang {
+        margin: -1px 3px;
+        transition-property: transform;
+        transition-duration: 0.3s;
+      }
+
+      .cart {
+        display: inline-block;
+        height: 40px;
+        position: relative;
+        bottom: 12px;
+        font-size: 20px;
+        /* background-color: blue; */
+        border-radius: 6px;
+        right: 5px;
+      }
+      .log:hover {
+        cursor: pointer;
+      }
+      .cart:hover {
+        cursor: pointer;
+      }
+      .cartlogo {
+        position: relative;
+        top: 7px;
+        margin: 0px 5px;
+        height: 25px;
+      }
+
+      .ang1 {
+        margin: 0px 5px;
+      }
+
+      .becom {
+        display: inline-block;
+        height: 40px;
+        margin: 0px 38px;
+        position: relative;
+        bottom: 12px;
+        font-size: 20px;
+        /* background-color: blue; */
+        /* border-radius: 6px; */
+      }
+
+      .becomlogo {
+        position: relative;
+        top: 7px;
+        margin: 0px 5px;
+        height: 25px;
+      }
+      .becom:hover {
+        cursor: pointer;
+      }
+
+      .dotlogo {
+        height: 35px;
+        width: 35px;
+        position: relative;
+        /* top: 5px; */
+        box-sizing: border-box;
+      }
+      .dot:hover .dotan {
+        display: block;
+        cursor: pointer;
+      }
+      .dot {
+        display: inline-block;
+        box-sizing: border-box;
+        /* height: 35px; */
+        /* position: relative; */
+        /* left: 5px; */
+        /* bottom: 5px; */
+        /* width: 35px; */
+      }
+      .dotlogo:hover {
+        cursor: pointer;
+      }
+      .dot:hover {
+        border: solid rgb(216, 215, 215) 0.1px;
+        border-radius: 5px;
+        background-color: #fafafa;
+        height: 35px;
+        width: 35px;
+      }
+
+      .logan {
+        height: 264px;
+        width: 280px;
+        position: absolute;
+        top: 40px;
+        z-index: 5;
+        background-color: #ffffff;
+        display: none;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        box-shadow: 0px 0px 10px 0px rgb(194, 192, 192);
+      }
+      .sign {
+        position: relative;
+        left: 34px;
+        text-decoration: none;
+        color: #2a55e5;
+        width: auto;
+      }
+      .sighr {
+        color: rgb(201, 200, 200);
+        width: 279px;
+        margin: 0px 0px;
+      }
+      .new {
+        padding: 15px;
+      }
+      /* .opt{
+            height: ;
+        } */
+      .opt {
+        height: 217px;
+        width: 280px;
+        /* padding: 15px; */
+        font-size: smaller;
+        /* padding-top: 0px; */
+        position: relative;
+        bottom: 14px;
+      }
+      .myprlogo {
+        position: relative;
+      }
+      /* .mypro {
+        font-size: 15px;
+      } */
+      .logi {
+        height: 20px;
+        position: relative;
+        top: 2px;
+        margin: 0px 5px;
+      }
+      .my:hover {
+        background-color: #fafafa;
+      }
+      /* .bell {
+      } */
+      .my {
+        margin: 0px 0px;
+        height: 35px;
+        padding-top: 8px;
+        box-sizing: border-box;
+        padding-left: 15px;
+        position: relative;
+        top: 14px;
+      }
+
+      .dotan {
+        z-index: 5;
+        height: 150px;
+        width: 225px;
+        background-color: #ffffff;
+        /* border: black solid 2px; */
+        display: inline-block;
+        position: absolute;
+        top: 55px;
+        right: 25px;
+        display: none;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        box-shadow: 0px 0px 10px 0px rgb(194, 192, 192);
+      }
+      .dt:hover {
+        background-color: #fafafa;
+      }
+      .dt {
+        height: 37px;
+        font-size: 17px;
+        padding-top: 5px;
+        box-sizing: border-box;
+      }
+      .dtlogo {
+        width: 20px;
+        position: relative;
+        top: 5px;
+        margin: 0px 7px;
+      }
+      .nav2 {
+        margin-top: 8px;
+        display: flex;
+        justify-content: center;
+        column-gap: 10px;
+        height: 126px;
+        width: 100vw;
+        background-color: #ffffff;
+        position: absolute;
+        top: 70px;
+      }
+      .gro:hover .nav2ang {
+        transform: rotate(180deg);
+      }
+      .nav2ang {
+        transition-property: transform;
+        transition-duration: 0.1s;
+      }
+      .gro:hover .nav2rit {
+        color: #2176ff;
+        /* font-weight: bold; */
+      }
+      .gro:hover {
+        /* background-color: #F0F5FF; */
+        cursor: pointer;
+      }
+      .gro {
+        height: 126px;
+        width: 130px;
+        padding: 16px 16px 16px 19px;
+        box-sizing: border-box;
+        position: relative;
+        left: 13px;
+      }
+      .bijlogo {
+        height: 64px;
+        width: 64px;
+      }
+      .nav2rit {
+        height: 16.8px;
+        width: auto;
+      }
+      .gro1 {
+        padding: 16px 16px 16px 24px;
+      }
+      .mobrt {
+        padding-left: 5px;
+        width: auto;
+      }
+      .elert {
+        position: relative;
+        right: 8px;
+        width: 100px;
+      }
+      .hort {
+        width: 145px;
+        /* padding-right: 3px; */
+        position: relative;
+        right: 27px;
+      }
+      .trrt {
+        padding-left: 9px;
+      }
+      .bert {
+        width: 157px;
+        position: relative;
+        right: 35px;
+      }
+      .twort {
+        width: 112px;
+        position: relative;
+        right: 17px;
+      }
+      .fur {
+        width: 150px;
+        padding-left: 28px;
+      }
+      .toy {
+        width: 155px;
+        padding-left: 15px;
+      }
+      .apt {
+        position: relative;
+        right: 5px;
+      }
+      .tr {
+        width: 110px;
+        padding-left: 0px;
+      }
+      .fas {
+        font-family: Roboto, Arial, sans-serif;
+        font-weight: 200;
+      }
+      .fasop {
+        font-size: 13px;
+        padding: 12px 16px;
+        width: 208px;
+        height: 20px;
+        font-family: Roboto, Arial, sans-serif;
+        display: flex;
+        justify-content: space-between;
+      }
+      .rtang {
+        display: none;
+      }
+      .fasop:hover .rtang {
+        display: block;
+      }
+      .fasop:hover {
+        background-color: #f0f5ff;
+        font-weight: 550;
+      }
+      .fas:hover .fasan {
+        display: block;
+      }
+      .fasan {
+        position: absolute;
+        height: 518px;
+        width: 240px;
+        background-color: #ffffff;
+        /* border: 1px solid black; */
+        right: 82px;
+        top: 105px;
+        z-index: 5;
+        background-color: #ffffff;
+        display: none;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        box-shadow: 0px 0px 10px 0px rgb(194, 192, 192);
+      }
+      .elec:hover .elecan {
+        display: block;
+        color: black;
+      }
+      .fur:hover .furan {
+        display: block;
+        color: black;
+      }
+      .toy:hover .toyan {
+        display: block;
+        color: black;
+      }
+      .whee:hover .wheean {
+        display: block;
+        color: black;
+      }
+      .wheean {
+        position: absolute;
+        height: 518px;
+        width: 240px;
+        background-color: #ffffff;
+        /* border: 1px solid black; */
+        right: 119px;
+        top: 105px;
+        /* display: inline-block; */
+        z-index: 5;
+        background-color: #ffffff;
+        display: none;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        box-shadow: 0px 0px 10px 0px rgb(194, 192, 192);
+      }
+      .toyan {
+        position: absolute;
+        height: 518px;
+        width: 240px;
+        background-color: #ffffff;
+        /* border: 1px solid black; */
+        right: 107px;
+        top: 105px;
+        /* display: inline-block; */
+        z-index: 5;
+        background-color: #ffffff;
+        display: none;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        box-shadow: 0px 0px 10px 0px rgb(194, 192, 192);
+      }
+      .furan {
+        position: absolute;
+        height: 518px;
+        width: 240px;
+        background-color: #ffffff;
+        /* border: 1px solid black; */
+        right: 88px;
+        top: 105px;
+        /* display: inline-block; */
+        z-index: 5;
+        background-color: #ffffff;
+        display: none;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        box-shadow: 0px 0px 10px 0px rgb(194, 192, 192);
+      }
+      .elecan {
+        position: absolute;
+        height: 518px;
+        width: 240px;
+        background-color: #ffffff;
+        /* border: 1px solid black; */
+        right: 78px;
+        top: 105px;
+        /* display: inline-block; */
+        z-index: 5;
+        background-color: #ffffff;
+        display: none;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        box-shadow: 0px 0px 10px 0px rgb(194, 192, 192);
+      }
+      .fatoan {
+        position: absolute;
+        height: 518px;
+        width: 240px;
+        background-color: #ffffff;
+        /* border: 1px solid black; */
+        right: -238px;
+        top: 0px;
+        z-index: 5;
+        background-color: #ffffff;
+        display: none;
+        /* border-bottom-left-radius: 5px; */
+        border-bottom-right-radius: 5px;
+        box-shadow: 0px 0px 10px 0px rgb(194, 192, 192);
+        font-weight: 100;
+      }
+      .fasop:hover .fatoan {
+        display: block;
+      }
+
+      .fatoop:hover {
+        font-weight: bold;
+      }
+      .fatoop {
+        width: 240px;
+        height: 44px;
+        font-size: 12px;
+        padding: 12px 16px;
+        box-sizing: border-box;
+      }
+
+      .logrt {
+        position: relative;
+        bottom: 2px;
+        display: inline-block;
+      }
+      .login {
+        height: 448px;
+        width: 270px;
+        background-color: #2874f0;
+        left: 370px;
+        top: 100px;
+        position: relative;
+        /* border: 2px solid black; */
+        /* z-index: 6; */
+        /* position: absolute;
+        top: 216px;
+    left: 70px; */
+        padding: 40px 33px;
+        /* display: inline-block; */
+      }
+      .logbaju {
+        height: 456px;
+        width: 434px;
+        background-color: #ffffff;
+        padding: 56px 35px 16px;
+        position: relative;
+        left: 706px;
+        top: -428px;
+        /* display: inline-block; */
+      }
+      .signbaar {
+        height: 100vh;
+        width: 100vw;
+        backdrop-filter: blur(5px);
+        background-color: rgba(0, 0, 0, 0.259);
+        z-index: 6;
+        position: fixed;
+        display: none;
+        /* visibility: hidden; */
+      }
+      .logbaar {
+        height: 100vh;
+        width: 100vw;
+        backdrop-filter: blur(5px);
+        background-color: rgba(0, 0, 0, 0.259);
+        z-index: 6;
+        position: fixed;
+        /* width: 100vw; */
+        /* display: flex;
+        display flex vaapryu toh aana thi thyu nhi atle mae position property vaaprvipdi
+        justify-content: center;
+        align-items: center; */
+        display: none;
+        /* height: 608px;
+    width: 840px;
+    position: absolute;
+    top: 100px;
+    left: 300px; */
+      }
+      .spalog {
+        font-size: 29px;
+        color: white;
+      }
+      .spaget {
+        font-size: 18px;
+        margin-top: 16px;
+        line-height: 150%;
+        color: #dbdbdb;
+      }
+      .logimg {
+        margin-top: 170px;
+        margin-left: 20px;
+      }
+      .wel {
+        font-size: 25px;
+        color: #2874f0;
+        display: flex;
+        justify-content: space-between;
+      }
+      .logx {
+        cursor: pointer;
+      }
+      .logx:hover {
+        color: red;
+      }
+      .inlog {
+        width: 427px;
+        height: 33px;
+        padding: 8px 10px 10px 0px;
+        box-sizing: border-box;
+        border-style: none;
+        outline: none;
+        font-size: 19px;
+      }
+      .logform {
+        margin-top: 50px;
+      }
+      .logfohr {
+        position: relative;
+        bottom: 25px;
+        /* border: rgb(0, 0, 0) solid .5px; */
+      }
+      /* .inpa {
+      } */
+      .inpa:focus + .labpa {
+        position: relative;
+        bottom: 50px;
+        font-size: smaller;
+        color: #2a55e5;
+        /* font-weight: bold; */
+      }
+      .inem:focus + .labmo {
+        position: relative;
+        bottom: 45px;
+        font-size: smaller;
+        color: #2a55e5;
+        /* font-weight: bold; */
+      }
+      .loglab {
+        transition-property: all;
+        transition-duration: 0.1s;
+        position: relative;
+        bottom: 22px;
+      }
+      .logbut:hover {
+        background-color: #2874f0;
+        cursor: pointer;
+      }
+      .bichhr {
+        width: 502px;
+        position: relative;
+        right: 35px;
+        top: 10px;
+        /* background-color: #2a55e5;
+    color: #2a55e5; */
+        border: 1px solid #2874f0;
+        /* transition-property: all;
+        transition-duration: 1s; */
+      }
+      .or {
+        margin: 10px 203px;
+        background-color: white;
+        width: 18px;
+        padding-left: 5px;
+        z-index: 5;
+        position: relative;
+        bottom: 10px;
+      }
+      .logbut {
+        height: 30px;
+        width: 80px;
+        background-color: #fb641b;
+        color: #ffffff;
+        padding: 7px 0px 0px 7px;
+        box-sizing: border-box;
+        margin: 0px 175px;
+        border-radius: 2px;
+        position: relative;
+        bottom: 15px;
+      }
+      .congo {
+        height: 40px;
+        width: 430px;
+        border: 1px solid rgb(172, 172, 172);
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 14px;
+        box-sizing: border-box;
+      }
+      /* .conlogo{
+        display: flex;
+        flex-direction: column;
+        column-gap: 5px;
+      } */
+      .coninsta {
+        height: 40px;
+        width: 430px;
+        border: 1px solid rgb(172, 172, 172);
+        border-radius: 3px;
+        margin: 15px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+      }
+      .conmer:hover {
+        background-color: #2874f0;
+        color: #ffffff;
+        border-style: none;
+        cursor: pointer;
+      }
+      .coninsta:hover {
+        background-color: rgb(255, 89, 89);
+      }
+      .loggologo {
+        width: 20px;
+        height: 20px;
+        margin: 0px 5px;
+      }
+      .gologo {
+        height: 25px;
+        width: 25px;
+      }
+      .logcr {
+        color: #2a55e5;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .logcr:hover {
+        text-decoration: underline;
+        color: #fb641b;
+      }
+      .newto {
+        color: #2a55e5;
+        /* font-weight: bold; */
+        margin: 20px 80px;
+        position: relative;
+        top: 20px;
+      }
+      .logfor:hover {
+        text-decoration: underline;
+        color: #fb641b;
+      }
+      .logfor {
+        position: relative;
+        bottom: 25px;
+        text-decoration: none;
+        color: #2874f0;
+      }
+      .logpage {
+        height: 100vh;
+        width: 100vw;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        display: none;
+        /* display: inline-block; */
+      }
+      .signpage {
+        height: 100vh;
+        width: 100vw;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        display: none;
+      }
+      .signp {
+        font-size: 28px;
+        font-weight: 500;
+        color: #ffffff;
+      }
+      .signp2 {
+        font-size: 18px;
+        margin-top: 16px;
+        line-height: 150%;
+        color: #dbdbdb;
+      }
+      .signimg {
+        margin-top: 100px;
+        margin-left: 20px;
+      }
+      .sigupand {
+        margin: 55px 0px;
+        margin-bottom: 0px;
+        position: relative;
+        bottom: 20px;
+      }
+      .blu {
+        color: #2874f0;
+        cursor: pointer;
+      }
+      .poli {
+        position: relative;
+        bottom: 45px;
+      }
+      .sigbut {
+        /* margin: 4px 0px; */
+        position: relative;
+        top: -35px;
+      }
+      .sigalr {
+        color: #2874f0;
+        margin: 15px 80px;
+      }
+      .siglog {
+        cursor: pointer;
+        color: #2874f0;
+        text-decoration: none;
+      }
+      .siglog:hover {
+        color: #fb641b;
+        text-decoration: underline;
+      }
+      .inlog:focus + .siglab {
+        position: relative;
+        bottom: 50px;
+        font-size: smaller;
+        color: #2a55e5;
+      }
+      .cont {
+        height: 900px;
+        width: 1480px;
+        padding: 20px 0px;
+        margin: 0px 35.6px;
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: repeat(2, auto);
+        /* grid-row-gap: 10px; */
+        position: relative;
+        bottom: 155px;
+        /* display: flex;
+        flex-direction: ; */
+        /* grid-row-gap: 10px; */
+        z-index: 3;
+      }
+      .content {
+        width: 350px;
+        height: 385px;
+        background-color: #ffffff;
+        /* border: 1px solid black; */
+        padding: 20px 0px 15px;
+      }
+      /* body{
+  background-image: url("homepho1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100vh;
+} */
+      .hompho {
+        height: 600px;
+        /* width: 100vw; */
+        position: relative;
+        background-image: url(homepho1.jpg);
+        z-index: -1;
+        background-size: cover;
+        background-repeat: no-repeat;
+        top: 205px;
+      }
+      .conhead {
+        font-size: 21px;
+        margin: 0px 16px;
+        color: #0f1111;
+        font-weight: 700;
+      }
+      .con2img {
+        width: 325px;
+        height: 140.85px;
+        display: flex;
+        /* flex-direction: row; */
+        justify-content: space-between;
+        margin: 15px 13px;
+        margin-left: 16px;
+        margin-top: 7px;
+      }
+      .con1img {
+        width: 325px;
+        height: 151.85px;
+        display: flex;
+        /* flex-direction: row; */
+        justify-content: space-between;
+        margin: 15px 13px;
+        margin-left: 16px;
+        margin-top: 7px;
+      }
+      .con2pho {
+        width: 147.75px;
+        height: 102.85px;
+      }
+      .con1pho {
+        width: 151.75px;
+        height: 115.85px;
+      }
+      .co1phort {
+        font-size: 13px;
+        color: #0f1111;
+        display: inline-block;
+      }
+      .co2phort1 {
+        position: absolute;
+        /* line-height: 18px; */
+        position: absolute;
+        /* line-height: 18px; */
+        top: 205px;
+        left: 386px;
+      }
+      .co3phort1 {
+        position: absolute;
+        left: 755px;
+        top: 190px;
+      }
+      .co4phort1 {
+        /* position: absolute; */
+        position: absolute;
+        left: 1128px;
+        top: 205px;
+      }
+      .co4phort3 {
+        position: relative;
+        /* line-height: 18px; */
+        top: -23px;
+        left: 17px;
+      }
+      .co4phort4 {
+        position: relative;
+        left: 129px;
+        top: -23px;
+      }
+      .co3phort3 {
+        position: absolute;
+        left: 755px;
+        top: 365px;
+      }
+      .co3phort2 {
+        position: absolute;
+        left: 921px;
+        top: 190px;
+      }
+      .co3phort4 {
+        position: absolute;
+        left: 921px;
+        top: 365px;
+      }
+      .co2phort2 {
+        position: absolute;
+        /* line-height: 18px; */
+        top: 205px;
+        left: 551px;
+      }
+
+      .co2phort3 {
+        left: 386px;
+        position: absolute;
+        top: 360px;
+      }
+      .co2phort4 {
+        position: absolute;
+        /* line-height: 18px; */
+        top: 360px;
+        left: 551px;
+      }
+
+      .co1phort1 {
+        position: absolute;
+        line-height: 18px;
+        top: 188px;
+        left: 15px;
+        /* max-height: 36px; */
+      }
+      .co1phort2 {
+        position: absolute;
+        left: 181px;
+        top: 190px;
+      }
+      /* .co2phort3{
+
+      } */
+      .co1phort3 {
+        position: absolute;
+        /* line-height: 18px; */
+        top: 365px;
+        left: 15px;
+      }
+      .co1phort4 {
+        position: absolute;
+        left: 181px;
+        top: 365px;
+      }
+
+      .conexp {
+        color: #007185;
+        font-size: 14px;
+        margin: 0px 15px;
+        cursor: pointer;
+      }
+      /* .conexp1{
+        margin-bottom: 5px;
+      } */
+      .conend {
+        position: relative;
+        /* bottom: 25px; */
+      }
+      .con4img {
+        width: 325px;
+        height: 140.85px;
+        display: flex;
+        /* flex-direction: row; */
+        justify-content: space-between;
+        margin: 0px 13px;
+        margin-left: 16px;
+        margin-top: -2px;
+      }
+
+      .co4phort2 {
+        position: relative;
+        top: -25px;
+        left: 182px;
+      }
+      .con5pho {
+        height: 102.2px;
+        width: 147.25px;
+      }
+      .conimgfl11 {
+        margin: 0px 13px;
+      }
+      /* .tvmi{
+height: 300px;
+background-image: url(tvmi.jpg);
+background-size:500px;
+background-repeat: no-repeat;
+      } */
+      .pho1 {
+        background-image: url(redminote13pho.webp);
+        /* z-index: 7; */
+        height: 400px;
+        background-size: cover;
+        background-attachment: fixed;
+        /* background-size: 1534px; */
+        background-repeat: no-repeat;
+        position: relative;
+        bottom: 200px;
+        width: 96vw;
+        margin: 10px 30px;
+      }
+      .fasn{
+        background-image: url(womban2.webp);
+        /* z-index: 7; */
+        height: 400px;
+        background-size: 1505px;
+        background-position: left 80px;
+        background-attachment: fixed;
+        /* background-size: 1534px; */
+        background-repeat: no-repeat;
+        /* position: relative;
+        bottom: 200px; */
+        width: 96vw;
+        margin: 10px 30px;
+        position: relative;
+    bottom: 95px;
+      }
+      .butyban{
+        background-image: url(perban6.webp);
+        /* z-index: 7; */
+        height: 400px;
+        
+        background-size: 1505px;
+        background-position: left 80px;
+        background-attachment: fixed;
+        /* background-size: 1534px; */
+        background-repeat: no-repeat;
+        /* position: relative;
+        bottom: 200px; */
+        width: 96vw;
+        margin: 10px 30px;
+        position: relative;
+    bottom: 95px;
+      }
+      .furban{
+        background-image: url(furniban1111.jpg);
+        /* z-index: 7; */
+        height: 400px;
+        
+        background-size: 1505px;
+        background-position: left 80px;
+        background-attachment: fixed;
+        /* background-size: 1534px; */
+        background-repeat: no-repeat;
+        /* position: relative;
+        bottom: 200px; */
+        width: 96vw;
+        margin: 10px 30px;
+        position: relative;
+    bottom: 95px;
+      }
+      .fasnmen{
+        background-image: url(menban2.webp);
+        /* z-index: 7; */
+        height: 400px;
+        background-size: 1505px;
+        background-position: left 80px;
+        background-attachment: fixed;
+        /* background-size: 1534px; */
+        background-repeat: no-repeat;
+        /* position: relative;
+        bottom: 200px; */
+        width: 96vw;
+        margin: 10px 30px;
+        position: relative;
+    bottom: 95px;
+      }
+      .pad{
+        background-image: url(redmipad.jpg);
+        /* z-index: 7; */
+        height: 400px;
+        background-size: cover;
+        background-attachment: fixed;
+        /* background-size: 1534px; */
+        background-repeat: no-repeat;
+        /* position: relative;
+        bottom: 200px; */
+        width: 96vw;
+        margin: 10px 30px;
+        position: relative;
+    bottom: 125px;
+      }
+      .f1 {
+        background-image: url(tv4.webp);
+        /* z-index: 7; */
+        height: 400px;
+        background-size: cover;
+        background-attachment: fixed;
+        /* background-size: 1534px; */
+        background-repeat: no-repeat;
+        /* position: relative;
+        bottom: 200px; */
+        width: 96vw;
+        margin: 10px 30px;
+        position: relative;
+    bottom: 155px;
+      }
+      /* .phoban{
+        width: 96vw;
+    margin: 10px 30px;
+    background-image: url(phonban.webp);
+    height: 180px;
+      } */
+      .f2 {
+        height: 100vh;
+      }
+      .gt {
+        height: 500px;
+      }
+      .prort {
+        height: 20px;
+        /* position: relative; */
+        margin: 200px 354px;
+      }
+      .tvrt {
+        height: 44px;
+        /* position: relative; */
+        margin: 21px 615px;
+      }
+      .mitv {
+        width: 1535px;
+        position: relative;
+        bottom: 150px;
+        animation-name: mitv;
+        animation-duration: 500ms;
+        animation-timing-function: linear;
+        animation-timeline: view();
+        /* right:0px; */
+        animation-range-start: 0px;
+        animation-range-end: 600px;
+      }
+      @keyframes mitv {
+        from {
+          opacity: 0;
+          /* width: 0px; */
+          scale: 0 0;
+        }
+        to {
+          opacity: 1;
+          /* width: 1535px; */
+          scale: 1 1;
+          /* position: fixed; */
+        }
+      }
+
+      .furbaar{
+        width: 303px;
+        height: 410px;
+        background-color: #FFFFFF;
+        display: inline-block;
+        padding: 30px;
+    box-sizing: border-box;
+    transition-property: box-shadow;
+    transition-duration: .3s;
+    /* font-family: Camphor Pro, sans-serif;
+    font-family: "Gill Sans", sans-serif; */
+    font-family: system-ui;
+    cursor: pointer;
+    color: #191919;
+      }
+
+      .furbaar:hover{
+        box-shadow: 0px 0px 15px 0px rgb(201, 201, 201);
+      }
+
+      .fasbaar{
+        width: 303px;
+        height: 530px;
+        background-color: #FFFFFF;
+        display: inline-block;
+        padding: 30px;
+    box-sizing: border-box;
+    transition-property: box-shadow;
+    transition-duration: .3s;
+    /* font-family: Camphor Pro, sans-serif;
+    font-family: "Gill Sans", sans-serif; */
+    font-family: system-ui;
+    cursor: pointer;
+    color: #191919;
+      }
+      .fasbaar:hover{
+        box-shadow: 0px 0px 15px 0px rgb(201, 201, 201);
+      }
+      .phon {
+        width: 303px;
+        height: 294px;
+        background-color: #FFFFFF;
+        display: inline-block;
+        padding: 30px;
+    box-sizing: border-box;
+    transition-property: box-shadow;
+    transition-duration: .3s;
+    font-family: Camphor Pro, sans-serif;
+    cursor: pointer;
+    color: #191919;
+      }
+      .phon:hover{
+        box-shadow: 0px 0px 15px 0px rgb(201, 201, 201);
+      }
+      .pho7{
+        display: flex;
+    justify-content:center;
+    position: relative;
+    bottom: 110px;
+    column-gap: 15px;
+      }
+      .pho8{
+        display: flex;
+    justify-content:center;
+    position: relative;
+    bottom: 95px;
+    column-gap: 15px;
+      }
+      .pho6{
+        display: flex;
+    justify-content:center;
+    position: relative;
+    bottom: 140px;
+    column-gap: 15px;
+      }
+      .pho5{
+        display: flex;
+    justify-content:center;
+    position: relative;
+    bottom: 180px;
+    column-gap: 15px;
+      }
+      .pad5{
+        position: relative;
+    bottom: 115px;
+      }
+      .tv{
+        position: relative;
+    bottom: 140px;
+      }
+      .phrtan{
+        font-weight: 700;
+    margin-bottom: 12px;
+    font-size: 17px;
+    font-family: 'Camphor Pro', sans-serif;
+
+      }
+      .phrt{
+        height: 52.8px;
+        width: 233px;
+      }
+      .view{
+        height: 17.6px;
+    width: 48.6px;
+    font-size: 13px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding: 0px 8px;
+    /* padding-top: 0px; */
+    background-color: #e5e5ff;
+    color: blue;
+      }
+      .phoofan{
+        height: 17.6px;
+    width: 48.6px;
+    font-size: 14px;
+      }
+      .phoof{
+        height: 17.6px;
+    width: 48.6px;
+    font-size: 13px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding: 0px 8px;
+    /* padding-top: 0px; */
+    background-color: #e5e5ff;
+    color: blue;
+      }
+      .phon1{
+        margin-left: 93px;
+    width: 150px;
+    margin-top: 30px;
+      }
+      .imgbaaju{
+        position: relative;
+        bottom: 80px;
+      }
+      .imgbaajufas{
+        position: relative;
+    top: 27px;
+      }
+      .imgbaaju1{
+        font-size: 15px;
+        font-weight: 700;
+      }
+      .imgbaaju2{
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 1.2;
+      }
+      .imgbaaju3{
+        font-size: 15px;
+    margin-top: 4px;
+    color: #d0d0d0;
+    text-decoration: line-through;
+    line-height: 1;
+      }
+      /* .conpro{
+        font-size: 28px;
+        margin: 0px 0px 18px;
+width:1474px;
+      } */
+      .topbut{
+        position: absolute;
+    z-index: 100;
+    left: 1483px;
+    transform: rotate(91deg);
+    border-radius: 7px;
+    border: 0px;
+    box-shadow: 0px 0px 15px 1px grey;
+      }
+      .fas1{
+        width: 220px;
+    position: relative;
+    top: 25px;
+      }
+      .perfan1{
+        background-image: url(perban6.webp);
+    /* z-index: 7; */
+    height: 630px;
+    background-size: 457px;
+    background-position: 32px;
+    background-position: left 97px;
+    background-attachment: fixed;
+    /* background-size: 1534px; */
+    background-repeat: no-repeat;
+    width: 28vw;
+    margin: 30px 30px;
+    position: relative;
+    bottom: 50px;
+    display: inline-block;
+    
+      }
+      .perban{
+
+      }
+      .perfbaar{
+        display: grid;
+        grid-template-columns: 28vw 70vw;
+        margin: 0px 25px;
+      }
+      .perfan2{
+        position: relative;
+    left: 48px;
+    display: grid;
+    width: 70vw;
+    grid-template-columns: 350px 350px 350px;
+    height: 630px;
+    margin-top: 30px;
+    bottom: 50px;
+    margin-bottom: 30px;
+    grid-row-gap: 40px;
+
+      }
+      .groban{
+        background-image: url(groban5.png);
+        /* z-index: 7; */
+        height: 400px;
+        
+        background-size: 1505px;
+        background-position: left 80px;
+        background-attachment: fixed;
+        /* background-size: 1534px; */
+        background-repeat: no-repeat;
+        /* position: relative;
+        bottom: 200px; */
+        width: 96vw;
+        margin: 10px 30px;
+        position: relative;
+    bottom: 95px;
+      }
+      .contgri{
+        display: grid;
+    grid-template-columns: repeat(4, 303px);
+    height: 604px;
+    width: 1310px;
+    margin: 0px 138px;
+    grid-gap: 15px;
+    bottom: 40px;
+    position: relative;
+
+      }
+      .congri{
+        /* background-color: #191919; */
+        background-color: #FFFFFF;
+        display: inline-block;
+        padding: 30px;
+    box-sizing: border-box;
+    transition-property: box-shadow;
+    transition-duration: .3s;
+    /* font-family: Camphor Pro, sans-serif;
+    font-family: "Gill Sans", sans-serif; */
+    font-family: system-ui;
+    cursor: pointer;
+    color: #191919;
+    height: 294px;
+      }
+      .congri:hover{
+        box-shadow: 0px 0px 15px 0px rgb(201, 201, 201);
+      }
+      .congri1{
+        grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-columns: 350px 210px;
+  }
+  .congrilkh{
+    height: 234.5px;
+    display: grid;
+    grid-template-rows: 94px 48px;
+    grid-row-gap: 90px;
+      }
+      .congri2{
+        grid-column-start: 3;
+    grid-column-end: 5;
+    display: grid;
+    grid-template-columns: 350px 209px;
+      }
+      .watban{
+        background-image: url(watspho.webp);
+        width: 1474px;
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 10px 30px;
+    position: relative;
+    bottom: 72px;
+      }
+      .wat{
+        font-size: 28px;
+    margin-bottom: 6px;
+    font-weight: 700;
+    color: #191919;
+    width: 235px;
+      }
+      .stayrt{
+        font-size: 18px;
+    margin-bottom: 18px;
+    color: #191919;
+    width: 235px;
+      }
+      .watrt{
+        width: 235px;
+        position: relative;
+    top: 70px;
+    left: 170px;
+      }
+      .brocont{
+        font-size: 24px;
+    width: 1263px;
+    margin: 18px 140px;
+    font-weight: bold;
+    font-family: system-ui;
+    bottom: 40px;
+    position: relative;
+      }
+      .footer{
+        height: 740px;
+        background-color: #191919;
+        /* margin: 0px 9.6px; */
+        padding: 0px 32px;
+      }
+      .footan{
+        width: 1436px;
+    height: 524px;
+    display: grid;
+    grid-template-columns: 1000px 408px;
+    grid-gap: 30px;
+    padding-top: 64px;
+      }
+      .footrt{
+        display: grid;
+        grid-template-columns: 244px 244px 244px 244px;
+
+      }
+      .footrthd{
+        color: white;
+      }
+      .footrtan{
+/* color: grey; */
+}
+.footer li{
+  color: #898989;
+   font-size: 16px;
+  margin-bottom: 16px;
+  width: 195px;
+}
+ .footer ul{
+  list-style: none;
+  padding-left: 0px;
+
+      }
+      .footer li:hover{
+        color: #FFFFFF;
+        text-decoration: underline;
+        cursor: pointer;
+      } 
+.foothr{
+  color: #898989;
+    margin-top: 50px;
+    /* height:.1px; */
+    /* font-size: 1px; */
+    border: solid 0.1px grey;
+}
+.footend{
+  height: 20px;
+  width: 1470px;
+  display: grid;
+  grid-template-columns: 410px 924px 97px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.footend{
+  color: #FFFFFF;
+}
+.footimg{
+  color: #FFFFFF;
+}
+.ico{
+  color: rgb(214, 210, 210);
+  margin-top: 20px;
+}
+.icofo{
+  font-size: 32px;
+  margin: 0px 5px;
+}
+.icofo:hover{
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.fotlet{
+  margin-top: 35px;
+}
+.footext{
+/* outline: #2176ff; */
+
+outline-width: 100px;
+    background: transparent;
+    /* border-style: none; */
+    border: white 1px solid;
+    border-radius: 14px;
+    height: 48px;
+    width: 406px;
+    padding: 1px 42px 1px 16px;
+    color: white;
+    font-size: 16px;
+outline-color: #2176ff;
+margin-top: 20px;
+box-sizing: border-box;
+}
+.footext::placeholder{
+  color: rgb(242, 237, 237);
+font-size: 16px;
+}
+.footang{
+  position: relative;
+    left: 370px;
+    bottom: 34px;
+    font-size: 20px;
+}
+.qrco{
+  height: 112px;
+  padding: 16px;
+  width: 408px;
+  border: solid 1px white;
+  box-sizing: border-box;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.qrimg{
+  width: 80px;
+}
+.footscan{
+  margin-top: 10px;
+  color:grey ;
+}
+.qrcoan:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.qrcoan{
+  height: 24px;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  justify-content: center;
+  align-items: center;
+  border: solid white 1px;
+  /* border: solid white 1px; */
+    border-top-style: none;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.playimg{
+  width: 35px;
+    position: relative;
+    left: 55px;
+}
+.budpho{
+  position: absolute;
+  height: 230px;
+}
+.congride{
+  height: 94px;
+}
+.congride1{
+  height: 64px;
+  font-size: 27px;
+  font-weight: bolder;
+}
+.congride2{
+  height: 25px;
+}
+.congripri{
+  height: 48px;
+}
+.congripri1{
+  font-size: 27px;
+  color: #191919;
+  font-weight: bolder;
+}
+.congripri2{
+  font-size: 27px;
+  color: rgb(153, 151, 151);
+  text-decoration:line-through;
+}
+.miwatch{
+position: absolute;
+bottom: 335px;
+right: 78px;
+}
+.congrimg{
+  height: 234.5px;
+}
+.rest{
+  height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    /* position: fixed; */
+    position: fixed;
+    bottom: 75px;
+    right: 50px;
+    z-index: 100;
+    padding-left: 15px;
+    box-shadow: 0px 0px 10px -2px gray;
+}
+
+.art{
+  font-size: 30px;
+  color: #191919;
+}
+.art2{
+  font-size: 30px;
+  position: absolute;
+    left: 15px;
+display: none;
+}
+.rest:hover .art2{
+  display: block;
+  color:black;
+
+}
+.rest:hover .art{
+  display: none;
+}
+.rest:hover{
+  box-shadow: 0px 0px 10px -1px gray;
+
+}
+    </style>
+  </head>
+  <div>
+    <nav >
+      <img class="flogo" src="flipkartlogo.svg" alt="" srcset="" />
+      <input
+        type="text"
+        name=""
+        class="ser"
+        id=""
+        placeholder="Search for product,brands and more"
+      />
+      <img src="serlogo.svg" class="serlogo" alt="" srcset="" />
+      <div class="log" id="nav">
+        <div class="logan">
+          <div class="new">
+            New customer?
+            <span class="sign"
+              >Sign Up
+              <div class="logrt"></div>
+            </span>
+          </div>
+          <hr color="" class="sighr" />
+          <div class="opt">
+            <div class="mypro my">
+              <img src="loginicon.svg" class="logi" alt="" srcset="" />
+              <div class="logrt">My Profile</div>
+            </div>
+            <div class="pluzo my">
+              <img src="flpluszo.svg" alt="" srcset="" class="logi" />
+              <div class="logrt">Flipkart Plus Zone</div>
+            </div>
+            <div class="ord my">
+              <img src="flord.svg" alt="" srcset="" class="logi" />
+              <div class="logrt">Orders</div>
+            </div>
+            <div class="wisli my">
+              <img src="fliwish.svg" alt="" srcset="" class="logi" />
+              <div class="logrt">Wishlist</div>
+            </div>
+            <div class="rew my">
+              <img src="flirew.svg" alt="" srcset="" class="logi" />
+              <div class="logrt">Rewards</div>
+            </div>
+            <div class="gifcar my">
+              <img src="fligica.svg" alt="" srcset="" class="logi" />
+
+              <div class="logrt">Gift Card</div>
+            </div>
+          </div>
+        </div>
+        <div class="log2">
+          <img src="loginicon.svg" class="loginlogo" alt="" srcset="" />login
+          <img src="flipangle.svg" class="ang" alt="" srcset="" />
+        </div>
+      </div>
+      <div class="cart">
+        <img src="flcartlogo.svg" alt="" class="cartlogo" srcset="" />Cart
+      </div>
+      <div class="becom">
+        <img src="becomlogo.svg" class="becomlogo" alt="" srcset="" />Become a
+        Seller
+      </div>
+      <div class="dot">
+        <img src="dotslogo.svg" class="dotlogo" alt="" srcset="" />
+        <div class="dotan">
+          <div class="bell dt">
+            <img
+              src="bellogo.svg"
+              alt=""
+              srcset=""
+              class="dtlogo"
+            />Notification Preferences
+          </div>
+          <div class="head dt">
+            <img src="headlogo.svg" alt="" srcset="" class="dtlogo" />24x7
+            Customer care
+          </div>
+          <div class="rise dt">
+            <img src="riselogo.svg" alt="" srcset="" class="dtlogo" />Advertise
+          </div>
+          <div class="down dt">
+            <img src="downlogo.svg" class="dtlogo" srcset="" />Download App
+          </div>
+        </div>
+      </div>
+     
+    </nav>
+    <div class="mobiles">
+      <div class="leicaupr">
+        <div class="leicaupr1">
+          <span class="leicaupr12">Xiaomi Series</span>
+          <span class="leicaupr13">A new era of exquisite design</span>
+          <button class="leilkh3 leicaupr14 ">more</button>
+        </div>
+      </div>
+<div class="leica">
+  <!-- <div class="moback">
+    <i class="fa-solid fa-arrow-left"></i>
+  </div> -->
+  <div class="leilkh">
+    <div class="leilkh1">XIAOMI 14 Ultra</div>
+    <div class="leilkh2">Lens to legend</div>
+    <button class="leilkh3">Learn more</button>
+  </div>
+</div>
+
+<div class="xiamobaar">
+  <div class="xiamo1 xiamo ">
+    <div class="xiamo1un">
+      <div class="xiamo12un">
+        <h1 class="xiamo1un1">Xiaomi 14 Ultra</h1><br>
+      <div class="xiamo1un2">Lens to legend</div>
+      </div>
+    </div>
+<div class="xiamolk">
+
+  <button class="leilkh3 xiamolkh">Learn more</button>
+</div>
+    <div class="xiamopho">
+      <img src="xiamopho1.webp" class="xiamopho1an"   alt="" srcset="">
+    </div>
+  </div>
+  <div class="xiamo2 xiamo">
+    <div class="xiamo1un">
+      <div class="xiamo12un">
+        <h1 class="xiamo1un1">Xiaomi 14 </h1><br>
+      <div class="xiamo1un2">Lens to legend</div>
+      </div>
+    </div>
+<div class="xiamolk">
+
+  <button class="leilkh3 xiamolkh">Learn more</button>
+</div>
+    <div class="xiamopho">
+      <img src="xiapho2.webp" class="xiamopho1an"   alt="" srcset="">
+    </div>
+  </div>
+  <div class="xiamo3 xiamo">
+    <div class="xiamo1un">
+      <div class="xiamo12un">
+        <h1 class="xiamo1un1">Xiaomi 13T Pro</h1><br>
+      <div class="xiamo1un2">Masterpiece in sight</div>
+      </div>
+    </div>
+<div class="xiamolk">
+
+  <button class="leilkh3 xiamolkh">Learn more</button>
+</div>
+    <div class="xiamopho">
+      <img src="xiaopho3.webp" class="xiamopho1an"   alt="" srcset="">
+    </div>
+  </div>
+  <div class="xiamo4 xiamo">
+    <div class="xiamo1un">
+      <div class="xiamo12un">
+        <h1 class="xiamo1un1">Xiaomi 13T</h1><br>
+      <div class="xiamo1un2">Masterpiece in sight</div>
+      </div>
+    </div>
+<div class="xiamolk">
+
+  <button class="leilkh3 xiamolkh">Learn more</button>
+</div>
+    <div class="xiamopho">
+      <img src="xiaopho4.webp" class="xiamopho1an"   alt="" srcset="">
+    </div>
+  </div>
+  <div class="xiamo5 xiamo">
+    <div class="xiamo1un xiamo5un">
+      <div class="xiamo12un">
+        <h1 class="xiamo1un1">Xiaomi 13 Pro</h1><br>
+      <div class="xiamo1un2"> Behind the masterpiece</div>
+      </div>
+    </div>
+<div class="xiamolk">
+
+  <button class="leilkh3 xiamolkh xiamolkh5">Learn more</button>
+</div>
+    <div class="xiamopho">
+      <img src="xiapho5.webp" class="xiamopho1an"   alt="" srcset="">
+    </div>
+  </div>
+  <div class="xiamo6 xiamo">
+    <div class="xiamo1un xiamo5un">
+      <div class="xiamo12un">
+        <h1 class="xiamo1un1">Xiaomi 13</h1><br>
+      <div class="xiamo1un2"> Behind the masterpiece</div>
+      </div>
+    </div>
+<div class="xiamolk">
+
+  <button class="leilkh3 xiamolkh xiamolkh5">Learn more</button>
+</div>
+    <div class="xiamopho">
+      <img src="xiaopho6.webp" class="xiamopho1an"   alt="" srcset="">
+    </div>
+  </div>
+  <div class="xiamo7 xiamo">
+    <div class="xiamo1un xiamo5un">
+      <div class="xiamo12un">
+        <h1 class="xiamo1un1">Xiaomi 12T Pro</h1><br>
+      <div class="xiamo1un2">Make moments mega</div>
+      </div>
+    </div>
+<div class="xiamolk">
+
+  <button class="leilkh3 xiamolkh xiamolkh5">Learn more</button>
+</div>
+    <div class="xiamopho">
+      <img src="xiaopho7.webp" class="xiamopho1an"   alt="" srcset="">
+    </div>
+  </div>
+  <div class="xiamo8 xiamo">
+    <div class="xiamo811">
+
+      <span class="xiamo81">All Product</span>
+      <div class="xiamo82">
+        <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="ju"></div> -->
+</div>
+  
+<div class="redmupr">
+   <div class="redmiupr1">
+    <span class="leicaupr12  redmiupr12">Redmi Series</span>
+    <span class="leicaupr13 redmiupr13">The Performance Racer</span>
+    <button class="leilkh3 redmupr14 leicaupr14 ">more</button>
+  </div> 
+</div>
+<div class="redmiban">
+  <div class="leilkh redlkh">
+  
+
+      <img src="redbanlkh.svg" alt="" class="leikh1">
+      <div class=" redlkh2">200MP OIS Camera <br>
+        1.5k curved display
+      </div>
+      
+   
+
+    <button class="leilkh3 redlkh3">Learn more</button>
+  </div>
+</div>
+<div class="redmibaar">
+<div class="redmi1 redmi">
+  <div class="xiamo1un xiamo5un">
+    <div class="xiamo12un">
+      <div class="xiamo1un1 red1un1">Redmi Note 13Pro 5G</div><br>
+    <div class="xiamo1un2">200MP OIS Camera <br>
+    1.5K 120HZ display</div>
+    </div>
+  </div>
+<div class="xiamolk">
+
+<button class="leilkh3 xiamolkh xiamolkh5">Learn more</button>
+</div>
+  <div class="xiamopho">
+    <img src="redpho1.webp" class="xiamopho1an"   alt="" srcset="">
+  </div>
+</div>
+<div class="redmi2 redmi">
+  <div class="xiamo1un xiamo5un">
+    <div class="xiamo12un">
+      <h1 class="xiamo1un1 red1un1">Redmi Note 13Pro</h1><br>
+      
+    <div class="xiamo1un2">200MP OIS Camera <br>
+    67W turbo charging</div>
+    </div>
+  </div>
+<div class="xiamolk">
+
+<button class="leilkh3 xiamolkh xiamolkh5">Learn more</button>
+</div>
+  <div class="xiamopho">
+    <img src="redph2.webp" class="xiamopho1an"   alt="" srcset="">
+  </div>
+</div>
+<div class="redmi3 redmi">
+  <div class="xiamo1un xiamo5un">
+    <div class="xiamo12un">
+      <h1 class="xiamo1un1 red1un1">Redmi Note 13 5G</h1><br>
+    <div class="xiamo1un2">Super-clear 108MP triple camera <br>
+      120Hz FHD+AMOLED display</div>
+    </div>
+  </div>
+<div class="xiamolk">
+
+<button class="leilkh3 xiamolkh xiamolkh5">Learn more</button>
+</div>
+  <div class="xiamopho">
+    <img src="redpho3.webp" class="xiamopho1an"   alt="" srcset="">
+  </div>
+</div>
+<div class="redmi4 redmi">
+  <div class="xiamo1un xiamo5un">
+    <div class="xiamo12un">
+      <h1 class="xiamo1un1 red1un1">Redmi Note 13 </h1><br>
+    <div class="xiamo1un2"> 108MP triple camera <br>
+      120Hz AMOLED display</h4></div>
+    </div>
+  </div>
+<div class="xiamolk">
+
+<button class="leilkh3 xiamolkh xiamolkh5">Learn more</button>
+</div>
+  <div class="xiamopho">
+    <img src="redpho4.webp" class="xiamopho1an"   alt="" srcset="">
+  </div>
+</div>
+<div class="redmi5 redmi"> <div class="xiamo1un xiamo5un">
+  <div class="xiamo12un">
+    <h1 class="xiamo1un1 red1un1">Redmi 12 5G</h1><br>
+  <div class="xiamo1un2">108MP pro-grade main camera | 90Hz FHD+  AMOLED DotDisplay | 33W fast charging</div>
+  </div>
+</div>
+<div class="xiamolk">
+
+<button class="leilkh3 xiamolkh xiamolkh5">Learn more</button>
+</div>
+<div class="xiamopho">
+  <img src="redpho5.webp" class="xiamopho1an"   alt="" srcset="">
+</div></div>
+<div class="redmi6 redmi"> <div class="xiamo1un xiamo5un">
+  <div class="xiamo12un">
+    <h1 class="xiamo1un1 red1un1">Redmi Note 12S</h1><br>
+  <div class="xiamo1un2">Powerful Snapdragon® performance | Large <br> 90Hz FHD+  display</div>
+  </div>
+</div>
+<div class="xiamolk">
+
+<button class="leilkh3 xiamolkh xiamolkh5">Learn more</button>
+</div>
+<div class="xiamopho">
+  <img src="redpho6.webp" class="xiamopho1an"   alt="" srcset="">
+</div></div>
+<div class="redmi7 redmi"> <div class="xiamo1un xiamo5un">
+  <div class="xiamo12un">
+    <h1 class="xiamo1un1 red1un1">Redmi Note 12 Pro+ 5G</h1><br>
+  <div class="xiamo1un2">200MP world-leading camera with OIS</div>
+  </div>
+</div>
+<div class="xiamolk">
+
+<button class="leilkh3 xiamolkh xiamolkh5">Learn more</button>
+</div>
+<div class="xiamopho">
+  <img src="redpho7.webp" class="xiamopho1an"   alt="" srcset="">
+</div></div>
+<div class="redmi8 redmi">
+  <div class="xiamo811">
+
+    <span class="xiamo81">All Product</span>
+    <div class="xiamo82">
+      <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+    </div>
+</div>
+
+</div>
+</div>
+<div class="footer mofoot">
+  <div class="footan">
+    <div class="footrt">
+    <div class="footrt1 footrtan">
+      <div class="footrthd">SUPPORT</div>
+      <ul>
+<li>Online help</li>
+<li>Customer Service</li>
+<li>Shipping FAQ</li>
+<li>Warranty</li>
+<li>Flipkart Exchange</li>
+<li>Bulk Orders</li>
+<li>User Guide</li>
+<li>Laptop Drivers</li>
+<li>Flipkart Screen Protect</li>
+<li>Flipkart Extended Warranty</li>
+<li>Flipkart Complete Protect</li>
+<li>Certification</li>
+<li>Service Center</li>
+      </ul>
+    </div>
+    <div class="footrt2 footrtan">
+      <div class="footrthd">SHOP AND LEARN</div>
+      <ul>
+        <li>Grocery</li>
+        <li>Mobiles</li>
+        <li>Electronics</li>
+        <li>Fashion</li>
+        <li>Furniture</li>
+        <li>Home Appliances</li>
+        <li>Travel</li>
+        <li>Toys and Beauty</li>
+        <li>Two Wheeler</li>
+      </ul>
+    </div>
+    <div class="footrt3 footrtan">
+      <div class="footrthd">RETAIL STORE</div>
+      <ul>
+        <li>Flipkart Home</li>
+        <li>Flipkart Authorized Store</li>
+        <li>Flipkart Store Franchise</li>
+      </ul>
+    </div>
+    <div class="footrt4 footrtan">
+      <div class="footrthd">ABOUT US</div>
+      <ul>
+        <li>Flipkart</li>
+        <li>Privacy Policy</li>
+        <li>User Agreement</li>
+        <li>Integrity & Compliance</li>
+        <li>CSR and Disclosures</li>
+        <li>E-Waste Management</li>
+        <li>In the Press</li>
+        <li>Trust Center</li>
+        <li>Culture</li>
+        <li>Product Quality</li>
+        <li>Service Quality</li>
+        <li>Join Our Team</li>
+      
+      </ul>
+    </div>
+    </div>
+    <div class="footimg">
+<div class="fol">Follow Flipkart
+<div class="ico"><i class="fa-brands fa-square-facebook icofo"></i> <i class="fa-brands fa-square-x-twitter icofo"></i> <i class="fa-brands fa-square-instagram icofo"></i></div>
+</div>
+<div class="emad">
+<div class="fotlet">Let's Stay in touch</div>
+<input type="text" name="" class="footext" id="" placeholder="Enter email address"><i class="fa-solid fa-chevron-right footang"></i>
+</div>
+<div class="qrco">
+<img src="qrcode.png" class="qrimg" alt="" srcset="">
+<div class="footrthd">Get Flipkart App
+<div class="footscan">Scan for our up-to-date information <br> for better shopping experience</div>
+</div>
+
+</div>
+<div class="qrcoan"><img src="play.svg" alt="" class="playimg" srcset="">Download on Google play</div>
+    </div>
+  </div>
+  <hr class="foothr">
+  <div class="footend">
+<span class="copy">Copyright ©️ 2010-2024 Flipkart.All Rights Reserved</span>
+<span class="sit">Sitemap</span>
+<span class="india">India / India</span>
+  </div>
+</div>
+<a href="#nav2">
+  
+
+    <div class="rest"><i class="fa-solid fa-arrow-up art"></i>
+      <i class="fa-solid fa-arrow-up fa-bounce art2"></i>
+    </div>
+  
+</a>
+<div>
+</div>
+
+  </div> 
+    <div class="nav2" id="nav2">
+      <div class="gro gro1">
+        <div class="groan">
+          <img
+            src="grocery1logo.png"
+            alt=""
+            srcset=""
+            class="grologo bijlogo"
+          />
+        </div>
+        <div class="nav2rit grort">Grocery</div>
+      </div>
+      <div class="gro mob">
+        <div class="groan">
+          <img src="mobilelogo.png" alt="" srcset="" class="grologo bijlogo" />
+        </div>
+        <div class="nav2rit mobrt">Mobiles</div>
+      </div>
+      <div class="gro fas">
+        <div class="groan">
+          <img
+            src="fashion1logo.png"
+            alt=""
+            srcset=""
+            class="grologo bijlogo"
+          />
+        </div>
+        <div class="nav2rit fasrt">
+          Fashion
+          <i class="fa-solid fa-angle-up nav2ang"></i>
+        </div>
+        <div class="fasan">
+          <div class="fasop">
+            Men's Top Wear<i class="fa-solid fa-chevron-right rtang"></i>
+            <div class="fatoan">
+              <div class="fatoop"><b>More in Mens Top Wear </b></div>
+              <div class="fatoop">All</div>
+              <div class="fatoop">Men's T-Shirt</div>
+              <div class="fatoop">Men's Casual shirts</div>
+              <div class="fatoop">Men's Formal shirts</div>
+              <div class="fatoop">Men's Kurtas</div>
+              <div class="fatoop">Men's ethnic sets</div>
+              <div class="fatoop">Men's Blazers</div>
+              <div class="fatoop">Men's Raincoat</div>
+              <div class="fatoop">Men's Windscheaters</div>
+              <div class="fatoop">Men's Suit</div>
+              <div class="fatoop">Men's Fabrics</div>
+            </div>
+          </div>
+          <div class="fasop">
+            Men's Bottom Wear
+            <!-- <i class="fa-solid fa-chevron-right rtang"></i> -->
+            <!-- <div class="fatoan">
+              <div class="fatoop">More in Mens Top Wear</div>
+              <div class="fatoop">All</div>
+              <div class="fatoop">Men's T-Shirt</div>
+              <div class="fatoop">Men's Casual shirts</div>
+              <div class="fatoop">Men's Formal shirts</div>
+              <div class="fatoop">Men's Kurtas</div>
+              <div class="fatoop">Men's ethnic sets</div>
+              <div class="fatoop">Men's Blazers</div>
+              <div class="fatoop">Men's Raincoat</div>
+              <div class="fatoop">Men's Windscheaters</div>
+              <div class="fatoop">Men's Suit</div>
+              <div class="fatoop">Men's Fabrics</div>
+            </div> -->
+          </div>
+          <div class="fasop">
+            Women Ethnics<i class="fa-solid fa-chevron-right rtang"></i>
+            <div class="fatoan">
+              <div class="fatoop"><b>More in Women Ethnics </b></div>
+              <div class="fatoop">All</div>
+              <div class="fatoop">Women saares</div>
+              <div class="fatoop">Women's kurtas and kurtis</div>
+              <div class="fatoop">Ethnics Dresses</div>
+              <div class="fatoop">Women's Dress Material</div>
+              <div class="fatoop">Women's Grown</div>
+              <div class="fatoop">Women's lehengha cholis</div>
+              <div class="fatoop">Women's leggings & patialas</div>
+            </div>
+          </div>
+          <div class="fasop">
+            Men Footwear
+            <!-- <i class="fa-solid fa-chevron-right rtang"></i> -->
+          </div>
+          <div class="fasop">
+            Women Footwear<i class="fa-solid fa-chevron-right rtang"></i>
+            <div class="fatoan">
+              <div class="fatoop"><b>More in Women's Footwear</b></div>
+              <div class="fatoop">All</div>
+              <div class="fatoop">Women's flat</div>
+              <div class="fatoop">Women's heels</div>
+              <div class="fatoop">Women's wedges</div>
+              <div class="fatoop">Women's Slipper Flip Flop</div>
+              <div class="fatoop">Women's casual Shoes</div>
+              <div class="fatoop">Women's Blazers</div>
+              <div class="fatoop">Women's Raincoat</div>
+              <div class="fatoop">Women's Windscheaters</div>
+              <div class="fatoop">Women's Suit</div>
+              <div class="fatoop">Women's Fabrics</div>
+            </div>
+          </div>
+          <div class="fasop">
+            Watches and Accesories
+            <!-- <i
+              class="fa-solid fa-chevron-right rtang"
+            ></i> -->
+          </div>
+          <div class="fasop">
+            Women Western<i class="fa-solid fa-chevron-right rtang"></i>
+            <div class="fatoan">
+              <div class="fatoop">More in Mens Top Wear</div>
+              <div class="fatoop">All</div>
+              <div class="fatoop">Men's T-Shirt</div>
+              <div class="fatoop">Men's Casual shirts</div>
+              <div class="fatoop">Men's Formal shirts</div>
+              <div class="fatoop">Men's Kurtas</div>
+              <div class="fatoop">Men's ethnic sets</div>
+              <div class="fatoop">Men's Blazers</div>
+              <div class="fatoop">Men's Raincoat</div>
+              <div class="fatoop">Men's Windscheaters</div>
+              <div class="fatoop">Men's Suit</div>
+              <div class="fatoop">Men's Fabrics</div>
+            </div>
+          </div>
+          <div class="fasop">
+            Bags,Suitcases & Laugages
+            <!-- <i
+              class="fa-solid fa-chevron-right rtang"
+            ></i> -->
+          </div>
+          <div class="fasop">
+            Kids<i class="fa-solid fa-chevron-right rtang"></i>
+            <div class="fatoan">
+              <div class="fatoop"><b>More in Women's Footwear</b></div>
+              <div class="fatoop">All</div>
+              <div class="fatoop">Women's flat</div>
+              <div class="fatoop">Women's heels</div>
+              <div class="fatoop">Women's wedges</div>
+              <div class="fatoop">Women's Slipper Flip Flop</div>
+              <div class="fatoop">Women's casual Shoes</div>
+              <div class="fatoop">Women's Blazers</div>
+              <div class="fatoop">Women's Raincoat</div>
+              <div class="fatoop">Women's Windscheaters</div>
+              <div class="fatoop">Women's Suit</div>
+              <div class="fatoop">Women's Fabrics</div>
+            </div>
+          </div>
+          <div class="fasop">
+            Essentials
+            <!-- <i class="fa-solid fa-chevron-right rtang"></i> -->
+          </div>
+          <div class="fasop">
+            Winter<i class="fa-solid fa-chevron-right rtang"></i>
+            <div class="fatoan">
+              <div class="fatoop">More in Mens Top Wear</div>
+              <div class="fatoop">All</div>
+              <div class="fatoop">Men's T-Shirt</div>
+              <div class="fatoop">Men's Casual shirts</div>
+              <div class="fatoop">Men's Formal shirts</div>
+              <div class="fatoop">Men's Kurtas</div>
+              <div class="fatoop">Men's ethnic sets</div>
+              <div class="fatoop">Men's Blazers</div>
+              <div class="fatoop">Men's Raincoat</div>
+              <div class="fatoop">Men's Windscheaters</div>
+              <div class="fatoop">Men's Suit</div>
+              <div class="fatoop">Men's Fabrics</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gro elec">
+        <div class="groan">
+          <img
+            src="electronics3logo.png"
+            alt=""
+            srcset=""
+            class="grologo bijlogo"
+          />
+        </div>
+        <div class="nav2rit elert">
+          Electronics
+
+          <i class="fa-solid fa-angle-up nav2ang"></i>
+        </div>
+        <div class="elecan">
+          <div class="fasop">
+            Men's Top Wear<i class="fa-solid fa-chevron-right rtang"></i>
+            <div class="fatoan">
+              <div class="fatoop"><b>More in Mens Top Wear </b></div>
+              <div class="fatoop">All</div>
+              <div class="fatoop">Men's T-Shirt</div>
+              <div class="fatoop">Men's Casual shirts</div>
+              <div class="fatoop">Men's Formal shirts</div>
+              <div class="fatoop">Men's Kurtas</div>
+              <div class="fatoop">Men's ethnic sets</div>
+              <div class="fatoop">Men's Blazers</div>
+              <div class="fatoop">Men's Raincoat</div>
+              <div class="fatoop">Men's Windscheaters</div>
+              <div class="fatoop">Men's Suit</div>
+              <div class="fatoop">Men's Fabrics</div>
+            </div>
+          </div>
+          <div class="fasop">
+            Men's Bottom Wear
+            <!-- <i class="fa-solid fa-chevron-right rtang"></i> -->
+            <!-- <div class="fatoan">
+              <div class="fatoop">More in Mens Top Wear</div>
+              <div class="fatoop">All</div>
+              <div class="fatoop">Men's T-Shirt</div>
+              <div class="fatoop">Men's Casual shirts</div>
+              <div class="fatoop">Men's Formal shirts</div>
+              <div class="fatoop">Men's Kurtas</div>
+              <div class="fatoop">Men's ethnic sets</div>
+              <div class="fatoop">Men's Blazers</div>
+              <div class="fatoop">Men's Raincoat</div>
+              <div class="fatoop">Men's Windscheaters</div>
+              <div class="fatoop">Men's Suit</div>
+              <div class="fatoop">Men's Fabrics</div>
+            </div> -->
+          </div>
+          <div class="fasop">
+            Women Ethnics<i class="fa-solid fa-chevron-right rtang"></i>
+            <div class="fatoan">
+              <div class="fatoop"><b>More in Women Ethnics </b></div>
+              <div class="fatoop">All</div>
+              <div class="fatoop">Women saares</div>
+              <div class="fatoop">Women's kurtas and kurtis</div>
+              <div class="fatoop">Ethnics Dresses</div>
+              <div class="fatoop">Women's Dress Material</div>
+              <div class="fatoop">Women's Grown</div>
+              <div class="fatoop">Women's lehengha cholis</div>
+              <div class="fatoop">Women's leggings & patialas</div>
+            </div>
+          </div>
+          <div class="fasop">
+            Men Footwear
+            <!-- <i class="fa-solid fa-chevron-right rtang"></i> -->
+          </div>
+          <div class="fasop">
+            Women Footwear<i class="fa-solid fa-chevron-right rtang"></i>
+            <div class="fatoan">
+              <div class="fatoop"><b>More in Women's Footwear</b></div>
+              <div class="fatoop">All</div>
+              <div class="fatoop">Women's flat</div>
+              <div class="fatoop">Women's heels</div>
+              <div class="fatoop">Women's wedges</div>
+              <div class="fatoop">Women's Slipper Flip Flop</div>
+              <div class="fatoop">Women's casual Shoes</div>
+              <div class="fatoop">Women's Blazers</div>
+              <div class="fatoop">Women's Raincoat</div>
+              <div class="fatoop">Women's Windscheaters</div>
+              <div class="fatoop">Women's Suit</div>
+              <div class="fatoop">Women's Fabrics</div>
+            </div>
+          </div>
+          <div class="fasop">
+            Watches and Accesories
+            <!-- <i
+              class="fa-solid fa-chevron-right rtang"
+            ></i> -->
+          </div>
+          <div class="fasop">
+            Women Western<i class="fa-solid fa-chevron-right rtang"></i>
+            <div class="fatoan">
+              <div class="fatoop">More in Mens Top Wear</div>
+              <div class="fatoop">All</div>
+              <div class="fatoop">Men's T-Shirt</div>
+              <div class="fatoop">Men's Casual shirts</div>
+              <div class="fatoop">Men's Formal shirts</div>
+              <div class="fatoop">Men's Kurtas</div>
+              <div class="fatoop">Men's ethnic sets</div>
+              <div class="fatoop">Men's Blazers</div>
+              <div class="fatoop">Men's Raincoat</div>
+              <div class="fatoop">Men's Windscheaters</div>
+              <div class="fatoop">Men's Suit</div>
+              <div class="fatoop">Men's Fabrics</div>
+            </div>
+          </div>
+          <div class="fasop">
+            Bags,Suitcases & Laugages
+            <!-- <i
+              class="fa-solid fa-chevron-right rtang"
+            ></i> -->
+          </div>
+          <div class="fasop">
+            Kids<i class="fa-solid fa-chevron-right rtang"></i>
+            <div class="fatoan">
+              <div class="fatoop"><b>More in Women's Footwear</b></div>
+              <div class="fatoop">All</div>
+              <div class="fatoop">Women's flat</div>
+              <div class="fatoop">Women's heels</div>
+              <div class="fatoop">Women's wedges</div>
+              <div class="fatoop">Women's Slipper Flip Flop</div>
+              <div class="fatoop">Women's casual Shoes</div>
+              <div class="fatoop">Women's Blazers</div>
+              <div class="fatoop">Women's Raincoat</div>
+              <div class="fatoop">Women's Windscheaters</div>
+              <div class="fatoop">Women's Suit</div>
+              <div class="fatoop">Women's Fabrics</div>
+            </div>
+          </div>
+          <div class="fasop">
+            Essentials
+            <!-- <i class="fa-solid fa-chevron-right rtang"></i> -->
+          </div>
+          <div class="fasop">
+            Winter<i class="fa-solid fa-chevron-right rtang"></i>
+            <div class="fatoan">
+              <div class="fatoop">More in Mens Top Wear</div>
+              <div class="fatoop">All</div>
+              <div class="fatoop">Men's T-Shirt</div>
+              <div class="fatoop">Men's Casual shirts</div>
+              <div class="fatoop">Men's Formal shirts</div>
+              <div class="fatoop">Men's Kurtas</div>
+              <div class="fatoop">Men's ethnic sets</div>
+              <div class="fatoop">Men's Blazers</div>
+              <div class="fatoop">Men's Raincoat</div>
+              <div class="fatoop">Men's Windscheaters</div>
+              <div class="fatoop">Men's Suit</div>
+              <div class="fatoop">Men's Fabrics</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gro fur">
+        <div class="groan">
+          <img
+            src="furniturelogo.png"
+            alt=""
+            srcset=""
+            class="grologo bijlogo"
+          />
+        </div>
+        <div class="nav2rit hort">
+          Home & Furniture
+
+          <i class="fa-solid fa-angle-up nav2ang"></i>
+        </div>
+        <div class="furan">
+          <div class="fasop">
+            Men's Top Wear<i class="fa-solid fa-chevron-right rtang"></i>
+            <div class="fatoan">
+              <div class="fatoop"><b>More in Mens Top Wear </b></div>
+              <div class="fatoop">All</div>
+              <div class="fatoop">Men's T-Shirt</div>
+              <div class="fatoop">Men's Casual shirts</div>
+              <div class="fatoop">Men's Formal shirts</div>
+              <div class="fatoop">Men's Kurtas</div>
+              <div class="fatoop">Men's ethnic sets</div>
+              <div class="fatoop">Men's Blazers</div>
+              <div class="fatoop">Men's Raincoat</div>
+              <div class="fatoop">Men's Windscheaters</div>
+              <div class="fatoop">Men's Suit</div>
+              <div class="fatoop">Men's Fabrics</div>
+            </div>
+          </div>
+          <div class="fasop">Men's Bottom Wear</div>
+          <div class="fasop">
+            Women Ethnics<i class="fa-solid fa-chevron-right rtang"></i>
+            <div class="fatoan">
+              <div class="fatoop"><b>More in Women Ethnics </b></div>
+              <div class="fatoop">All</div>
+              <div class="fatoop">Women saares</div>
+              <div class="fatoop">Women's kurtas and kurtis</div>
+              <div class="fatoop">Ethnics Dresses</div>
+              <div class="fatoop">Women's Dress Material</div>
+              <div class="fatoop">Women's Grown</div>
+              <div class="fatoop">Women's lehengha cholis</div>
+              <div class="fatoop">Women's leggings & patialas</div>
+            </div>
+          </div>
+          <div class="fasop">
+            Men Footwear
+            <!-- <i class="fa-solid fa-chevron-right rtang"></i> -->
+          </div>
+          <div class="fasop">
+            Women Footwear<i class="fa-solid fa-chevron-right rtang"></i>
+            <div class="fatoan">
+              <div class="fatoop"><b>More in Women's Footwear</b></div>
+              <div class="fatoop">All</div>
+              <div class="fatoop">Women's flat</div>
+              <div class="fatoop">Women's heels</div>
+              <div class="fatoop">Women's wedges</div>
+              <div class="fatoop">Women's Slipper Flip Flop</div>
+              <div class="fatoop">Women's casual Shoes</div>
+              <div class="fatoop">Women's Blazers</div>
+              <div class="fatoop">Women's Raincoat</div>
+              <div class="fatoop">Women's Windscheaters</div>
+              <div class="fatoop">Women's Suit</div>
+              <div class="fatoop">Women's Fabrics</div>
+            </div>
+          </div>
+          <div class="fasop">
+            Watches and Accesories
+            <!-- <i
+              class="fa-solid fa-chevron-right rtang"
+            ></i> -->
+          </div>
+          <div class="fasop">
+            Women Western<i class="fa-solid fa-chevron-right rtang"></i>
+            <div class="fatoan">
+              <div class="fatoop">More in Mens Top Wear</div>
+              <div class="fatoop">All</div>
+              <div class="fatoop">Men's T-Shirt</div>
+              <div class="fatoop">Men's Casual shirts</div>
+              <div class="fatoop">Men's Formal shirts</div>
+              <div class="fatoop">Men's Kurtas</div>
+              <div class="fatoop">Men's ethnic sets</div>
+              <div class="fatoop">Men's Blazers</div>
+              <div class="fatoop">Men's Raincoat</div>
+              <div class="fatoop">Men's Windscheaters</div>
+              <div class="fatoop">Men's Suit</div>
+              <div class="fatoop">Men's Fabrics</div>
+            </div>
+          </div>
+          <div class="fasop">
+            Bags,Suitcases & Laugages
+            <!-- <i
+              class="fa-solid fa-chevron-right rtang"
+            ></i> -->
+          </div>
+          <div class="fasop">
+            Kids<i class="fa-solid fa-chevron-right rtang"></i>
+            <div class="fatoan">
+              <div class="fatoop"><b>More in Women's Footwear</b></div>
+              <div class="fatoop">All</div>
+              <div class="fatoop">Women's flat</div>
+              <div class="fatoop">Women's heels</div>
+              <div class="fatoop">Women's wedges</div>
+              <div class="fatoop">Women's Slipper Flip Flop</div>
+              <div class="fatoop">Women's casual Shoes</div>
+              <div class="fatoop">Women's Blazers</div>
+              <div class="fatoop">Women's Raincoat</div>
+              <div class="fatoop">Women's Windscheaters</div>
+              <div class="fatoop">Women's Suit</div>
+              <div class="fatoop">Women's Fabrics</div>
+            </div>
+          </div>
+          <div class="fasop">
+            Essentials
+            <!-- <i class="fa-solid fa-chevron-right rtang"></i> -->
+          </div>
+          <div class="fasop">
+            Winter<i class="fa-solid fa-chevron-right rtang"></i>
+            <div class="fatoan">
+              <div class="fatoop">More in Mens Top Wear</div>
+              <div class="fatoop">All</div>
+              <div class="fatoop">Men's T-Shirt</div>
+              <div class="fatoop">Men's Casual shirts</div>
+              <div class="fatoop">Men's Formal shirts</div>
+              <div class="fatoop">Men's Kurtas</div>
+              <div class="fatoop">Men's ethnic sets</div>
+              <div class="fatoop">Men's Blazers</div>
+              <div class="fatoop">Men's Raincoat</div>
+              <div class="fatoop">Men's Windscheaters</div>
+              <div class="fatoop">Men's Suit</div>
+              <div class="fatoop">Men's Fabrics</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gro">
+        <div class="groan">
+          <img
+            src="electronicslogo.png"
+            alt=""
+            srcset=""
+            class="grologo bijlogo"
+          />
+        </div>
+        <div class="nav2rit apt">Appliances</div>
+      </div>
+      <div class="gro tr">
+        <div class="groan">
+          <img src="travel1logo.png" alt="" srcset="" class="grologo bijlogo" />
+        </div>
+        <div class="nav2rit trrt">Travel</div>
+      </div>
+      <div class="gro toy">
+        <div class="groan">
+          <img src="toys2logo.png" alt="" srcset="" class="grologo bijlogo" />
+        </div>
+        <div class="nav2rit bert">
+          Beauty,toys & more
+
+          <i class="fa-solid fa-angle-up nav2ang"></i>
+        </div>
+        <div class="toyan">
+          <div class="fasop">
+            Men's Top Wear<i class="fa-solid fa-chevron-right rtang"></i>
+            <div class="fatoan">
+              <div class="fatoop"><b>More in Mens Top Wear </b></div>
+              <div class="fatoop">All</div>
+              <div class="fatoop">Men's T-Shirt</div>
+              <div class="fatoop">Men's Casual shirts</div>
+              <div class="fatoop">Men's Formal shirts</div>
+              <div class="fatoop">Men's Kurtas</div>
+              <div class="fatoop">Men's ethnic sets</div>
+              <div class="fatoop">Men's Blazers</div>
+              <div class="fatoop">Men's Raincoat</div>
+              <div class="fatoop">Men's Windscheaters</div>
+              <div class="fatoop">Men's Suit</div>
+              <div class="fatoop">Men's Fabrics</div>
+            </div>
+          </div>
+          <div class="fasop">
+            Men's Bottom Wear
+            <!-- <i class="fa-solid fa-chevron-right rtang"></i> -->
+            <!-- <div class="fatoan">
+              <div class="fatoop">More in Mens Top Wear</div>
+              <div class="fatoop">All</div>
+              <div class="fatoop">Men's T-Shirt</div>
+              <div class="fatoop">Men's Casual shirts</div>
+              <div class="fatoop">Men's Formal shirts</div>
+              <div class="fatoop">Men's Kurtas</div>
+              <div class="fatoop">Men's ethnic sets</div>
+              <div class="fatoop">Men's Blazers</div>
+              <div class="fatoop">Men's Raincoat</div>
+              <div class="fatoop">Men's Windscheaters</div>
+              <div class="fatoop">Men's Suit</div>
+              <div class="fatoop">Men's Fabrics</div>
+            </div> -->
+          </div>
+          <div class="fasop">
+            Women Ethnics<i class="fa-solid fa-chevron-right rtang"></i>
+            <div class="fatoan">
+              <div class="fatoop"><b>More in Women Ethnics </b></div>
+              <div class="fatoop">All</div>
+              <div class="fatoop">Women saares</div>
+              <div class="fatoop">Women's kurtas and kurtis</div>
+              <div class="fatoop">Ethnics Dresses</div>
+              <div class="fatoop">Women's Dress Material</div>
+              <div class="fatoop">Women's Grown</div>
+              <div class="fatoop">Women's lehengha cholis</div>
+              <div class="fatoop">Women's leggings & patialas</div>
+            </div>
+          </div>
+          <div class="fasop">
+            Men Footwear
+            <!-- <i class="fa-solid fa-chevron-right rtang"></i> -->
+          </div>
+          <div class="fasop">
+            Women Footwear<i class="fa-solid fa-chevron-right rtang"></i>
+            <div class="fatoan">
+              <div class="fatoop"><b>More in Women's Footwear</b></div>
+              <div class="fatoop">All</div>
+              <div class="fatoop">Women's flat</div>
+              <div class="fatoop">Women's heels</div>
+              <div class="fatoop">Women's wedges</div>
+              <div class="fatoop">Women's Slipper Flip Flop</div>
+              <div class="fatoop">Women's casual Shoes</div>
+              <div class="fatoop">Women's Blazers</div>
+              <div class="fatoop">Women's Raincoat</div>
+              <div class="fatoop">Women's Windscheaters</div>
+              <div class="fatoop">Women's Suit</div>
+              <div class="fatoop">Women's Fabrics</div>
+            </div>
+          </div>
+          <div class="fasop">
+            Watches and Accesories
+            <!-- <i
+              class="fa-solid fa-chevron-right rtang"
+            ></i> -->
+          </div>
+          <div class="fasop">
+            Women Western<i class="fa-solid fa-chevron-right rtang"></i>
+            <div class="fatoan">
+              <div class="fatoop">More in Mens Top Wear</div>
+              <div class="fatoop">All</div>
+              <div class="fatoop">Men's T-Shirt</div>
+              <div class="fatoop">Men's Casual shirts</div>
+              <div class="fatoop">Men's Formal shirts</div>
+              <div class="fatoop">Men's Kurtas</div>
+              <div class="fatoop">Men's ethnic sets</div>
+              <div class="fatoop">Men's Blazers</div>
+              <div class="fatoop">Men's Raincoat</div>
+              <div class="fatoop">Men's Windscheaters</div>
+              <div class="fatoop">Men's Suit</div>
+              <div class="fatoop">Men's Fabrics</div>
+            </div>
+          </div>
+          <div class="fasop">
+            Bags,Suitcases & Laugages
+            <!-- <i
+              class="fa-solid fa-chevron-right rtang"
+            ></i> -->
+          </div>
+          <div class="fasop">
+            Kids<i class="fa-solid fa-chevron-right rtang"></i>
+            <div class="fatoan">
+              <div class="fatoop"><b>More in Women's Footwear</b></div>
+              <div class="fatoop">All</div>
+              <div class="fatoop">Women's flat</div>
+              <div class="fatoop">Women's heels</div>
+              <div class="fatoop">Women's wedges</div>
+              <div class="fatoop">Women's Slipper Flip Flop</div>
+              <div class="fatoop">Women's casual Shoes</div>
+              <div class="fatoop">Women's Blazers</div>
+              <div class="fatoop">Women's Raincoat</div>
+              <div class="fatoop">Women's Windscheaters</div>
+              <div class="fatoop">Women's Suit</div>
+              <div class="fatoop">Women's Fabrics</div>
+            </div>
+          </div>
+          <div class="fasop">
+            Essentials
+            <!-- <i class="fa-solid fa-chevron-right rtang"></i> -->
+          </div>
+          <div class="fasop">
+            Winter<i class="fa-solid fa-chevron-right rtang"></i>
+            <div class="fatoan">
+              <div class="fatoop">More in Mens Top Wear</div>
+              <div class="fatoop">All</div>
+              <div class="fatoop">Men's T-Shirt</div>
+              <div class="fatoop">Men's Casual shirts</div>
+              <div class="fatoop">Men's Formal shirts</div>
+              <div class="fatoop">Men's Kurtas</div>
+              <div class="fatoop">Men's ethnic sets</div>
+              <div class="fatoop">Men's Blazers</div>
+              <div class="fatoop">Men's Raincoat</div>
+              <div class="fatoop">Men's Windscheaters</div>
+              <div class="fatoop">Men's Suit</div>
+              <div class="fatoop">Men's Fabrics</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gro whee">
+        <div class="groan">
+          <img src="twologo.png" alt="" srcset="" class="grologo bijlogo" />
+        </div>
+        <div class="nav2rit twort">
+          Two Wheeler
+
+          <i class="fa-solid fa-angle-up nav2ang"></i>
+        </div>
+        <div class="wheean">
+          <div class="fasop">
+            Men's Top Wear<i class="fa-solid fa-chevron-right rtang"></i>
+            <div class="fatoan">
+              <div class="fatoop"><b>More in Mens Top Wear </b></div>
+              <div class="fatoop">All</div>
+              <div class="fatoop">Men's T-Shirt</div>
+              <div class="fatoop">Men's Casual shirts</div>
+              <div class="fatoop">Men's Formal shirts</div>
+              <div class="fatoop">Men's Kurtas</div>
+              <div class="fatoop">Men's ethnic sets</div>
+              <div class="fatoop">Men's Blazers</div>
+              <div class="fatoop">Men's Raincoat</div>
+              <div class="fatoop">Men's Windscheaters</div>
+              <div class="fatoop">Men's Suit</div>
+              <div class="fatoop">Men's Fabrics</div>
+            </div>
+          </div>
+          <div class="fasop">
+            Men's Bottom Wear
+            <!-- <i class="fa-solid fa-chevron-right rtang"></i> -->
+            <!-- <div class="fatoan">
+              <div class="fatoop">More in Mens Top Wear</div>
+              <div class="fatoop">All</div>
+              <div class="fatoop">Men's T-Shirt</div>
+              <div class="fatoop">Men's Casual shirts</div>
+              <div class="fatoop">Men's Formal shirts</div>
+              <div class="fatoop">Men's Kurtas</div>
+              <div class="fatoop">Men's ethnic sets</div>
+              <div class="fatoop">Men's Blazers</div>
+              <div class="fatoop">Men's Raincoat</div>
+              <div class="fatoop">Men's Windscheaters</div>
+              <div class="fatoop">Men's Suit</div>
+              <div class="fatoop">Men's Fabrics</div>
+            </div> -->
+          </div>
+          <div class="fasop">
+            Women Ethnics<i class="fa-solid fa-chevron-right rtang"></i>
+            <div class="fatoan">
+              <div class="fatoop"><b>More in Women Ethnics </b></div>
+              <div class="fatoop">All</div>
+              <div class="fatoop">Women saares</div>
+              <div class="fatoop">Women's kurtas and kurtis</div>
+              <div class="fatoop">Ethnics Dresses</div>
+              <div class="fatoop">Women's Dress Material</div>
+              <div class="fatoop">Women's Grown</div>
+              <div class="fatoop">Women's lehengha cholis</div>
+              <div class="fatoop">Women's leggings & patialas</div>
+            </div>
+          </div>
+          <div class="fasop">
+            Men Footwear
+            <!-- <i class="fa-solid fa-chevron-right rtang"></i> -->
+          </div>
+          <div class="fasop">
+            Women Footwear<i class="fa-solid fa-chevron-right rtang"></i>
+            <div class="fatoan">
+              <div class="fatoop"><b>More in Women's Footwear</b></div>
+              <div class="fatoop">All</div>
+              <div class="fatoop">Women's flat</div>
+              <div class="fatoop">Women's heels</div>
+              <div class="fatoop">Women's wedges</div>
+              <div class="fatoop">Women's Slipper Flip Flop</div>
+              <div class="fatoop">Women's casual Shoes</div>
+              <div class="fatoop">Women's Blazers</div>
+              <div class="fatoop">Women's Raincoat</div>
+              <div class="fatoop">Women's Windscheaters</div>
+              <div class="fatoop">Women's Suit</div>
+              <div class="fatoop">Women's Fabrics</div>
+            </div>
+          </div>
+          <div class="fasop">
+            Watches and Accesories
+            <!-- <i
+              class="fa-solid fa-chevron-right rtang"
+            ></i> -->
+          </div>
+          <div class="fasop">
+            Women Western<i class="fa-solid fa-chevron-right rtang"></i>
+            <div class="fatoan">
+              <div class="fatoop">More in Mens Top Wear</div>
+              <div class="fatoop">All</div>
+              <div class="fatoop">Men's T-Shirt</div>
+              <div class="fatoop">Men's Casual shirts</div>
+              <div class="fatoop">Men's Formal shirts</div>
+              <div class="fatoop">Men's Kurtas</div>
+              <div class="fatoop">Men's ethnic sets</div>
+              <div class="fatoop">Men's Blazers</div>
+              <div class="fatoop">Men's Raincoat</div>
+              <div class="fatoop">Men's Windscheaters</div>
+              <div class="fatoop">Men's Suit</div>
+              <div class="fatoop">Men's Fabrics</div>
+            </div>
+          </div>
+          <div class="fasop">
+            Bags,Suitcases & Laugages
+            <!-- <i
+              class="fa-solid fa-chevron-right rtang"
+            ></i> -->
+          </div>
+          <div class="fasop">
+            Kids<i class="fa-solid fa-chevron-right rtang"></i>
+            <div class="fatoan">
+              <div class="fatoop"><b>More in Women's Footwear</b></div>
+              <div class="fatoop">All</div>
+              <div class="fatoop">Women's flat</div>
+              <div class="fatoop">Women's heels</div>
+              <div class="fatoop">Women's wedges</div>
+              <div class="fatoop">Women's Slipper Flip Flop</div>
+              <div class="fatoop">Women's casual Shoes</div>
+              <div class="fatoop">Women's Blazers</div>
+              <div class="fatoop">Women's Raincoat</div>
+              <div class="fatoop">Women's Windscheaters</div>
+              <div class="fatoop">Women's Suit</div>
+              <div class="fatoop">Women's Fabrics</div>
+            </div>
+          </div>
+          <div class="fasop">
+            Essentials
+            <!-- <i class="fa-solid fa-chevron-right rtang"></i> -->
+          </div>
+          <div class="fasop">
+            Winter<i class="fa-solid fa-chevron-right rtang"></i>
+            <div class="fatoan">
+              <div class="fatoop">More in Mens Top Wear</div>
+              <div class="fatoop">All</div>
+              <div class="fatoop">Men's T-Shirt</div>
+              <div class="fatoop">Men's Casual shirts</div>
+              <div class="fatoop">Men's Formal shirts</div>
+              <div class="fatoop">Men's Kurtas</div>
+              <div class="fatoop">Men's ethnic sets</div>
+              <div class="fatoop">Men's Blazers</div>
+              <div class="fatoop">Men's Raincoat</div>
+              <div class="fatoop">Men's Windscheaters</div>
+              <div class="fatoop">Men's Suit</div>
+              <div class="fatoop">Men's Fabrics</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="gro">
+        <div class="groan">
+
+            <img src="electronicslogo.png" alt="" srcset="" class="grologo bijlogo"> 
+        </div>
+        <div class="nav2rit">Grocery</div><i class="fa-solid fa-angle-up"></i>
+    </div> -->
+    </div>
+    <div class="logbaar">
+      <div class="logpage">
+        <div class="login">
+          <span class="spalog">Login</span>
+          <p class="spaget">
+            <span
+              >Get access to your orders <br />Wishlist and
+              Recommendations</span
+            >
+          </p>
+          <img
+            class="logimg"
+            src="	https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/login_img_c4a81e.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+        <div class="logbaju">
+          <div class="wel">
+            <span> Welcome To Flipkart </span
+            ><i class="fa-solid fa-xmark logx"></i>
+          </div>
+          <form class="logform" action="">
+            <input type="text" name="em" id="em" class="inlog inem" />
+            <label for="em" class="loglab labmo">Enter Email</label>
+
+            <hr class="logfohr" />
+            <input type="password" name="pa" id="pa" class="inlog inpa" />
+            <label for="pa" class="loglab labpa">Enter Password</label>
+
+            <hr class="logfohr" />
+            <a href="" class="logfor">Forget Password?</a>
+            <div class="logbut">Continue</div>
+          </form>
+          <hr class="bichhr" />
+          <div class="or">or</div>
+          <div class="conlog">
+            <div class="congo conmer">
+              <img
+                src="googlelogo.png"
+                class="loggologo gologo"
+                alt=""
+              />Continue with Google
+            </div>
+            <div class="coninsta conmer">
+              <img src="insta4logo.png" alt="" class="loggologo" />Continue with
+              Instagram
+            </div>
+          </div>
+          <div class="newto">
+            New to flipkart? <span class="logcr">Create an account </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="signbaar">
+      <div class="signpage">
+        <div class="login">
+          <p class="signp">Looks like you're new here!</p>
+          <p class="signp2">
+            <span>Sign up with your mobile number to get started</span>
+          </p>
+          <img
+            class="signimg"
+            src="	https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/login_img_c4a81e.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+        <div class="logbaju">
+          <div class="wel">
+            <span> Welcome To Flipkart </span
+            ><i class="fa-solid fa-xmark logx"></i>
+          </div>
+          <div class="sigupand">
+            <input type="text" name="na" id="" class="inlog" />
+            <label for="na" class="loglab siglab">Enter Name</label>
+            <hr class="logfohr" />
+            <input type="text" name="" id="" class="inlog" />
+            <label for="" class="loglab siglab">Enter Email</label>
+            <hr class="logfohr" />
+            <input type="password" name="" id="" class="inlog" />
+            <label for="" class="loglab siglab">Create Password</label>
+            <hr class="logfohr" />
+            <input type="password" name="" id="" class="inlog" />
+            <label for="" class="loglab siglab">Confirm Password</label>
+            <hr class="logfohr" />
+          </div>
+          <div class="poli">
+            By continuing, you agree to Flipkart's
+            <span class="blu">Terms of Use</span> and
+            <span class="blu">Privacy Policy</span>.
+          </div>
+          <div class="logbut sigbut">Continue</div>
+          <div class="sigalr">
+            Already have an account?
+            <span class="siglog">Login</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <img src="homepho1.jpg" alt="" srcset="" class="hompho1"> -->
+    <div class="hompho hompic"></div>
+    <div class="hompho2 hompic"></div>
+    <div class="hompho3 hompic"></div>
+    <div class="hompho4 hompic"></div>
+    <div class="cont">
+      <div class="cont1 content">
+        <div class="conhead">Revamp your home in style</div>
+        <div class="conimgfl1 con1img">
+          <img src="cont1pho1.jpg" class="con1pho" alt="" srcset="" />
+          <br />
+          <img src="cont1pho2.jpg" alt="" srcset="" class="con1pho" />
+          <br />
+          <div class="co1phort1 co1phort">
+            cushion covers,bedsheets <br />
+            & more
+          </div>
+          <div class="co1phort2 co1phort">Figurines,vases and more</div>
+        </div>
+        <div class="conimgfl2 con1img">
+          <img src="cont1pho3.jpg" alt="" srcset="" class="con1pho" />
+          <br />
+          <img src="cont1pho4.jpg" alt="" srcset="" class="con1pho" />
+          <br />
+          <div class="co1phort3 co1phort">Home Storage</div>
+          <div class="co1phort4 co1phort">Lightning Solutions</div>
+        </div>
+        <div class="conexp">Explore all</div>
+      </div>
+      <div class="cont2 content">
+        <div class="conhead">
+          Appliances for your home | Up <br />
+          to 55% off
+        </div>
+        <div class="conimgfl1 con2img">
+          <img src="con2pho.jpg" class="con2pho" alt="" srcset="" />
+          <br />
+          <img src="con2pho2.jpg" alt="" srcset="" class="con2pho" />
+          <br />
+          <div class="co2phort1 co1phort">Air conditioners</div>
+          <div class="co2phort2 co1phort">Refrigerator</div>
+        </div>
+        <div class="conimgfl2 con2img">
+          <img src="con2pho3.jpg" alt="" srcset="" class="con2pho" />
+          <br />
+          <img src="con2pho4.jpg" alt="" srcset="" class="con2pho" />
+          <br />
+          <div class="co2phort3 co1phort">Microwaves</div>
+          <div class="co2phort4 co1phort">Washing machines</div>
+        </div>
+        <div class="conexp conend">See more</div>
+      </div>
+      <div class="cont3 content">
+        <div class="conhead">Up to 60% off | styles for men</div>
+        <div class="conimgfl1 con1img">
+          <img src="con3pho1.jpg" class="con1pho" alt="" srcset="" />
+          <br />
+          <img src="con3pho2.jpg" alt="" srcset="" class="con1pho" />
+          <br />
+          <div class="co3phort1 co1phort">Clothing</div>
+          <div class="co3phort2 co1phort">Footwear</div>
+        </div>
+        <div class="conimgfl2 con1img">
+          <img src="con3pho3.jpg" alt="" srcset="" class="con1pho" />
+          <br />
+          <img src="con3pho4.jpg" alt="" srcset="" class="con1pho" />
+          <br />
+          <div class="co3phort3 co1phort">Watches</div>
+          <div class="co3phort4 co1phort">Bags & wallets</div>
+        </div>
+        <div class="conexp">End of season sale</div>
+      </div>
+      <div class="cont4 content">
+        <div class="conhead">
+          Up to 60% off |Styles for <br />
+          women
+        </div>
+        <div class="conimgfl1 con4img">
+          <img src="con4pho1.jpg" class="con1pho" alt="" srcset="" />
+          <br />
+          <img src="con4pho2.jpg" alt="" srcset="" class="con1pho" />
+          <br />
+          <div class="co4phort1 co1phort">Women's clothing</div>
+        </div>
+        <div class="co4phort2 co1phort">Footwear + Handbag</div>
+        <div class="conimgfl2 con4img">
+          <img src="con4pho3.jpg" alt="" srcset="" class="con1pho" />
+          <br />
+          <img src="con4pho4.jpg" alt="" srcset="" class="con1pho" />
+          <br />
+        </div>
+        <div class="co4phort3 co1phort">Watches</div>
+        <div class="co4phort4 co1phort">Fashion Jewellery</div>
+        <div class="conexp conend">End of season sale</div>
+      </div>
+
+      <div class="cont5 content">
+        <div class="conhead">
+          Starting ₹99 | All your home<br />
+          Improvement needs
+        </div>
+        <div class="conimgfl11 con1img">
+          <img src="con5pho1.jpg" class="con1pho con5pho" alt="" srcset="" />
+          <br />
+          <img src="con5pho2.jpg" alt="" srcset="" class="con1pho con5pho" />
+          <br />
+          <!-- <div class="co5phort1 co1phort">Spin mops,wipes & more</div> -->
+          <!-- <div class="co5phort2 co1phort">Bathroom,hardware & accessories</div> -->
+        </div>
+        <div class="conimgfl11 con1img">
+          <img src="con5pho3.jpg" alt="" srcset="" class="con1pho con5pho" />
+          <br />
+          <img src="con5pho4.jpg" alt="" srcset="" class="con1pho con5pho" />
+          <br />
+        </div>
+        <div class="co5phort3 co1phort"></div>
+        <div class="co5phort4 co1phort"></div>
+        <div class="conexp conexp1">Explore all</div>
+      </div>
+      <div class="cont6 content">
+        <div class="conhead">Automotive essentials | Up to <br />60% off</div>
+        <div class="conimgfl11 con1img">
+          <img src="con6pho1.jpg" class="con1pho con5pho" alt="" srcset="" />
+          <br />
+          <img src="con6pho2.jpg" alt="" srcset="" class="con1pho con5pho" />
+          <br />
+          <!-- <div class="co5phort1 co1phort">hellofriends</div> -->
+          <div class="co5phort2 co1phort"></div>
+        </div>
+        <div class="conimgfl11 con1img">
+          <img src="con6pho3.jpg" alt="" srcset="" class="con1pho con5pho" />
+          <br />
+          <img src="con6pho4.jpg" alt="" srcset="" class="con1pho con5pho" />
+          <br />
+          <div class="co1phort3 co1phort"></div>
+          <div class="co1phort4 co1phort"></div>
+        </div>
+        <div class="conexp conexp1">See more</div>
+      </div>
+      <div class="cont7 content">
+        <div class="conhead">
+          Starting ₹149 | Bestselling <br />earbuds, headphone & more
+        </div>
+        <div class="conimgfl11 con1img">
+          <img src="con7pho1.jpg" class="con1pho con5pho" alt="" srcset="" />
+          <br />
+          <img src="con7pho2.jpg" alt="" srcset="" class="con1pho con5pho" />
+          <br />
+          <div class="co1phort1 co1phort"></div>
+          <div class="co1phort2 co1phort"></div>
+        </div>
+        <div class="conimgfl11 con1img">
+          <img src="con7pho3.jpg" alt="" srcset="" class="con1pho con5pho" />
+          <br />
+          <img src="con7pho44.jpg" alt="" srcset="" class="con1pho con5pho" />
+          <br />
+          <div class="co1phort3 co1phort"></div>
+          <div class="co1phort4 co1phort"></div>
+        </div>
+        <div class="conexp conexp1">See all offer</div>
+      </div>
+      <div class="cont8 content">
+        <div class="conhead">
+          Tender care,endless fun | <br />
+          Amazon Brands & more
+        </div>
+        <div class="conimgfl11 con1img">
+          <img src="con8pho1.jpg" class="con1pho con5pho" alt="" srcset="" />
+          <br />
+          <img src="con8pho2.jpg" alt="" srcset="" class="con1pho con5pho" />
+          <br />
+          <div class="co1phort1 co1phort"></div>
+          <div class="co1phort2 co1phort"></div>
+        </div>
+        <div class="conimgfl11 con1img">
+          <img src="con8pho3.jpg" alt="" srcset="" class="con1pho con5pho" />
+          <br />
+          <img src="con8pho44.jpg" alt="" srcset="" class="con1pho con5pho" />
+          <br />
+          <div class="co1phort3 co1phort"></div>
+          <div class="co1phort4 co1phort"></div>
+        </div>
+        <div class="conexp conexp1">See all deals</div>
+      </div>
+    </div>
+    <div class="pho1">
+      <!-- <img src="13prort.webp" class="prort" alt="" srcset="" /> -->
+    </div>
+    <div class="pho5">
+
+      <div class="pho0 phon">
+        
+        <div class="phrt">
+         <div class="phrtan">
+           Redmi Note 13 5G
+
+         </div>
+          <div class="phoof">
+            <div class="phoofan">
+              14% off
+            </div> 
+          </div>
+        </div>
+        <img src="phon11.webp" class="phon1" alt="" srcset="">
+        <div class="imgbaaju">
+          <div class="imgbaaju1">From</div>
+          <div class="imgbaaju2"> <small>₹</small>17,999</div>
+          <div class="imgbaaju3"><small>₹</small>20,999</div>
+        </div>
+      </div>
+      <div class="pho2 phon">
+        <div class="phrt">
+          <div class="phrtan">
+            Redmi Note 13 Pro
+ 
+          </div>
+           <div class="phoof">
+             <div class="phoofan">
+               10% off
+             </div> 
+           </div>
+         </div>
+         <img src="phon2.webp" class="phon1" alt="" srcset="">
+         <div class="imgbaaju">
+           <div class="imgbaaju1">From</div>
+           <div class="imgbaaju2"> <small>₹</small>25,999</div>
+           <div class="imgbaaju3"><small>₹</small>28,999</div>
+         </div>
+      </div>
+      
+      <div class="pho3 phon">
+        <div class="phrt">
+          <div class="phrtan">
+            Redmi Note 13 Pro+
+ 
+          </div>
+           <div class="phoof">
+             <div class="phoofan">
+               5% off
+             </div> 
+           </div>
+         </div>
+         <img src="phon3.webp" class="phon1" alt="" srcset="">
+         <div class="imgbaaju">
+           <div class="imgbaaju1">From</div>
+           <div class="imgbaaju2"> <small>₹</small>31,999</div>
+           <div class="imgbaaju3"><small>₹</small>33,999</div>
+         </div>
+      </div>
+      <div class="pho4 phon">
+        <div class="phrt">
+          <div class="phrtan">
+            Redmi Note 12 5G
+ 
+          </div>
+           <div class="phoof">
+             <div class="phoofan">
+               25% off
+             </div> 
+           </div>
+         </div>
+         <img src="phon4.webp" class="phon1" alt="" srcset="">
+         <div class="imgbaaju">
+           <div class="imgbaaju1">From</div>
+           <div class="imgbaaju2"> <small>₹</small>11,999</div>
+           <div class="imgbaaju3"><small>₹</small>15,999</div>
+         </div>
+      </div>
+    </div>
+    <!-- <div class="view">view all</div> -->
+   
+    <!-- ----------------------tv Start--------------------------------------- -->
+    <div class="f1">
+      <!-- <img src="tv4rt.webp" alt="" class="tvrt" srcset="" /> -->
+    </div>
+    <div class="pho6">
+
+      <div class="pho0 phon">
+        
+        <div class="phrt">
+         <div class="phrtan">
+           Xiaomi TV 5A 40 | Exclusive <br> Deal
+
+         </div>
+          <div class="phoof">
+            <div class="phoofan">
+              39% off
+            </div> 
+          </div>
+        </div>
+        <img src="tvpho1.webp" class="phon1" alt="" srcset="">
+        <div class="imgbaaju">
+          <div class="imgbaaju1">From</div>
+          <div class="imgbaaju2"> <small>₹</small>25,999</div>
+          <div class="imgbaaju3"><small>₹</small>42,999</div>
+        </div>
+      </div>
+      <div class="pho2 phon">
+        <div class="phrt">
+          <div class="phrtan">
+            Redmi Smart TV 4K | Up to <br>₹3,000 Bank Discount 
+ 
+          </div>
+           <div class="phoof">
+             <div class="phoofan">
+               20% off
+             </div> 
+           </div>
+         </div>
+         <img src="tvpho2.webp" class="phon1" alt="" srcset="">
+         <div class="imgbaaju">
+           <div class="imgbaaju1">From</div>
+           <div class="imgbaaju2"> <small>₹</small>19,999</div>
+           <div class="imgbaaju3"><small>₹</small>29,999</div>
+         </div>
+      </div>
+      <div class="pho3 phon">
+        <div class="phrt">
+          <div class="phrtan">
+            Redmi TV X55 | ₹2,500 Bank <br> Offer
+ 
+          </div>
+           <div class="phoof">
+             <div class="phoofan">
+               35% off
+             </div> 
+           </div>
+         </div>
+         <img src="tvpho3.webp" class="phon1" alt="" srcset="">
+         <div class="imgbaaju">
+           <div class="imgbaaju1">From</div>
+           <div class="imgbaaju2"> <small>₹</small>39,999</div>
+           <div class="imgbaaju3"><small>₹</small>54,999</div>
+         </div>
+      </div>
+      <div class="pho4 phon">
+        <div class="phrt">
+          <div class="phrtan">
+            Redmi Smart TV 43 | Exclusive Deal
+ 
+          </div>
+           <div class="phoof">
+             <div class="phoofan">
+               27% off
+             </div> 
+           </div>
+         </div>
+         <img src="tvpho4.webp" class="phon1" alt="" srcset="">
+         <div class="imgbaaju">
+           <div class="imgbaaju1">From</div>
+           <div class="imgbaaju2"> <small>₹</small>32,999</div>
+           <div class="imgbaaju3"><small>₹</small>44,999</div>
+         </div>
+      </div>
+  
+    </div>
+   <!-- ----------------------tv end tablet start--------------------------------------- -->
+    <div class="pad">
+      <img src="" alt=""  srcset="" />
+    </div>
+    <div class="pho7">
+
+      <div class="pho0 phon">
+        
+        <div class="phrt">
+         <div class="phrtan">
+           Redmi Pad | ₹1,500 Bank <br> Discount
+
+         </div>
+          <div class="phoof">
+            <div class="phoofan">
+              40% off
+            </div> 
+          </div>
+        </div>
+        <img src="padpho1.webp" class="phon1" alt="" srcset="">
+        <div class="imgbaaju">
+          <div class="imgbaaju1">From</div>
+          <div class="imgbaaju2"> <small>₹</small>12,999</div>
+          <div class="imgbaaju3"><small>₹</small>21,999</div>
+        </div>
+      </div>
+      <div class="pho2 phon">
+        <div class="phrt">
+          <div class="phrtan">
+            Xiaomi Pad 5 6 GB 128 GB + <br> Smart Pen
+ 
+          </div>
+           <div class="phoof">
+             <div class="phoofan">
+               34% off
+             </div> 
+           </div>
+         </div>
+         <img src="padpho2.webp" class="phon1" alt="" srcset="">
+         <div class="imgbaaju">
+           <div class="imgbaaju1">From</div>
+           <div class="imgbaaju2"> <small>₹</small>31,999</div>
+           <div class="imgbaaju3"><small>₹</small>48,999</div>
+         </div>
+      </div>
+      <div class="pho3 phon">
+        <div class="phrt">
+          <div class="phrtan">
+            Xiaomi Pad 6 8/256GB + <br> Smart Pen + Cover Combo
+ 
+          </div>
+           <div class="phoof">
+             <div class="phoofan">
+               33% off
+             </div> 
+           </div>
+         </div>
+         <img src="padpho3.webp" class="phon1" alt="" srcset="">
+         <div class="imgbaaju">
+           <div class="imgbaaju1">From</div>
+           <div class="imgbaaju2"> <small>₹</small>34,999</div>
+           <div class="imgbaaju3"><small>₹</small>53,999</div>
+         </div>
+      </div>
+      <div class="pho4 phon">
+        <div class="phrt">
+          <div class="phrtan">
+            Tablet Accesories
+ 
+          </div>
+           <div class="phoof">
+             <div class="phoofan">
+               35% off
+             </div> 
+           </div>
+         </div>
+         <img src="padpho4.webp" class="phon1" alt="" srcset="">
+         <div class="imgbaaju">
+           <div class="imgbaaju1">From</div>
+           <div class="imgbaaju2"> <small>₹</small>5,999</div>
+           <div class="imgbaaju3"><small>₹</small>8,999</div>
+         </div>
+      </div>
+  
+    </div>
+    <!-- ---------------------------- lady fashon start-------------------------------------------------- -->
+    <div class="fasn">
+      <img src="" alt=""  srcset="" />
+    </div>
+    <div class="pho8">
+
+      <div class="fasbaar ">
+        
+        <div class="phrt">
+         <div class="phrtan">
+           Mustard Yellow Printed Lehengha
+
+         </div>
+          <div class="phoof">
+            <div class="phoofan">
+              30% off
+            </div> 
+          </div>
+        </div>
+        <img src="fasphoto11.avif" class="fas1" alt="" srcset="">
+        <div class="imgbaajufas">
+          <div class="imgbaaju1">From</div>
+          <div class="imgbaaju2"> <small>₹</small>2,940</div>
+          <div class="imgbaaju3"><small>₹</small>4,200</div>
+        </div>
+      </div>
+      <div class="fasbaar">
+        <div class="phrt">
+          <div class="phrtan">
+           Dusty Pink Tiered lehenga Skirt 
+ 
+          </div>
+           <div class="phoof">
+             <div class="phoofan">
+               34% off
+             </div> 
+           </div>
+         </div>
+         <img src="faspimg2.avif" class="fas1" alt="" srcset="">
+         <div class="imgbaajufas">
+           <div class="imgbaaju1">From</div>
+           <div class="imgbaaju2"> <small>₹</small>3,100</div>
+           <div class="imgbaaju3"><small>₹</small>4,800</div>
+         </div>
+      </div>
+      <div class="fasbaar">
+        <div class="phrt">
+          <div class="phrtan">
+           Blue Foil print Kalidar Lehenga Skirt
+ 
+          </div>
+           <div class="phoof">
+             <div class="phoofan">
+               33% off
+             </div> 
+           </div>
+         </div>
+         <img src="fasimg3.avif" class="fas1" alt="" srcset="">
+         <div class="imgbaajufas">
+           <div class="imgbaaju1">From</div>
+           <div class="imgbaaju2"> <small>₹</small>4,400</div>
+           <div class="imgbaaju3"><small>₹</small>5,300</div>
+         </div>
+      </div>
+      <div class="fasbaar">
+        <div class="phrt">
+          <div class="phrtan">
+            Pink Tiered lehenga Skirt with cancan
+ 
+          </div>
+           <div class="phoof">
+             <div class="phoofan">
+               35% off
+             </div> 
+           </div>
+         </div>
+         <img src="fasimg4.avif" class="fas1" alt="" srcset="">
+         <div class="imgbaajufas">
+           <div class="imgbaaju1">From</div>
+           <div class="imgbaaju2"> <small>₹</small>1,500</div>
+           <div class="imgbaaju3"><small>₹</small>3,400</div>
+         </div>
+      </div>
+  <!-- -------start menfas--------- -->
+    </div>
+    <div class="fasnmen">
+      <img src="" alt=""  srcset="" />
+    </div>
+    <div class="pho8">
+
+      <div class="fasbaar ">
+        
+        <div class="phrt">
+         <div class="phrtan">
+           WES Formals Solid Wine Slim Fit Blazer
+
+         </div>
+          <div class="phoof">
+            <div class="phoofan">
+              9% off
+            </div> 
+          </div>
+        </div>
+        <img src="menpho1.webp" class="fas1" alt="" srcset="">
+        <div class="imgbaajufas">
+          <div class="imgbaaju1">From</div>
+          <div class="imgbaaju2"> <small>₹</small>3,540</div>
+          <div class="imgbaaju3"><small>₹</small>4,200</div>
+        </div>
+      </div>
+      <div class="fasbaar">
+        <div class="phrt">
+          <div class="phrtan">
+           Ascout Navy Relaxed Fit Blazer
+ 
+          </div>
+           <div class="phoof">
+             <div class="phoofan">
+               4% off
+             </div> 
+           </div>
+         </div>
+         <img src="menpho2.webp" class="fas1" alt="" srcset="">
+         <div class="imgbaajufas">
+           <div class="imgbaaju1">From</div>
+           <div class="imgbaaju2"> <small>₹</small>3,300</div>
+           <div class="imgbaaju3"><small>₹</small>3,800</div>
+         </div>
+      </div>
+      <div class="fasbaar">
+        <div class="phrt">
+          <div class="phrtan">
+           WES Casuals Multicolour-Block Slim Fit Polo T-Shirt
+ 
+          </div>
+           <div class="phoof">
+             <div class="phoofan">
+               10% off
+             </div> 
+           </div>
+         </div>
+         <img src="menpho3.webp" class="fas1" alt="" srcset="">
+         <div class="imgbaajufas">
+           <div class="imgbaaju1">From</div>
+           <div class="imgbaaju2"> <small>₹</small>900</div>
+           <div class="imgbaaju3"><small>₹</small>1,300</div>
+         </div>
+      </div>
+      <div class="fasbaar">
+        <div class="phrt">
+          <div class="phrtan">
+            Ascout Brown linen solid relaxed Fit T-shirt
+ 
+          </div>
+           <div class="phoof">
+             <div class="phoofan">
+               3% off
+             </div> 
+           </div>
+         </div>
+         <img src="menpho4.webp" class="fas1" alt="" srcset="">
+         <div class="imgbaajufas">
+           <div class="imgbaaju1">From</div>
+           <div class="imgbaaju2"> <small>₹</small>1,400</div>
+           <div class="imgbaaju3"><small>₹</small>2,400</div>
+         </div>
+      </div>
+  
+    </div>
+  </div>
+<!-- </div> -->
+  <!-- -----------------------furstart--- -->
+  <div class="furban">
+    <img src="" alt=""  srcset="" />
+  </div>
+  <div class="pho8">
+
+    <div class="furbaar ">
+      
+      <div class="phrt">
+       <div class="phrtan">
+         5 Seater Sofa set
+
+       </div>
+        <div class="phoof">
+          <div class="phoofan">
+            19% off
+          </div> 
+        </div>
+      </div>
+      <img src="furpho1.jpg" class="fas1" alt="" srcset="">
+      <div class="imgbaajufas">
+        <div class="imgbaaju1">From</div>
+        <div class="imgbaaju2"> <small>₹</small>45,540</div>
+        <div class="imgbaaju3"><small>₹</small>48,200</div>
+      </div>
+    </div>
+    <div class="furbaar">
+      <div class="phrt">
+        <div class="phrtan">
+         Antara Teak Wood Top 6 seater dining table set
+
+        </div>
+         <div class="phoof">
+           <div class="phoofan">
+             4% off
+           </div> 
+         </div>
+       </div>
+       <img src="furpho2.webp" class="fas1" alt="" srcset="">
+       <div class="imgbaajufas">
+         <div class="imgbaaju1">From</div>
+         <div class="imgbaaju2"> <small>₹</small>53,300</div>
+         <div class="imgbaaju3"><small>₹</small>63,800</div>
+       </div>
+    </div>
+    <div class="furbaar">
+      <div class="phrt">
+        <div class="phrtan">
+         Fetherlite Liberate High Back Mesh Chair
+
+        </div>
+         <div class="phoof">
+           <div class="phoofan">
+             10% off
+           </div> 
+         </div>
+       </div>
+       <img src="furpho3.webp" class="fas1" alt="" srcset="">
+       <div class="imgbaajufas">
+         <div class="imgbaaju1">From</div>
+         <div class="imgbaaju2"> <small>₹</small>17,000</div>
+         <div class="imgbaaju3"><small>₹</small>21,300</div>
+       </div>
+    </div>
+    <div class="furbaar">
+      <div class="phrt">
+        <div class="phrtan">
+         Wilston Bar Cabinet(walnut Finish)
+
+        </div>
+         <div class="phoof">
+           <div class="phoofan">
+             32% off
+           </div> 
+         </div>
+       </div>
+       <img src="furpho4.webp" class="fas1" alt="" srcset="">
+       <div class="imgbaajufas">
+         <div class="imgbaaju1">From</div>
+         <div class="imgbaaju2"> <small>₹</small>36,999</div>
+         <div class="imgbaaju3"><small>₹</small>55,999</div>
+       </div>
+    </div>
+
+  </div>
+  <!-- -----beauty-------- -->
+  <!-- <div class="perfbaar">
+    <div class="perfan1"></div>
+    <div class="perfan2">
+      <div class="peranan phon">
+        <div class="phrt">
+          <div class="phrtan">
+            Redmi Note 13 Pro+
+ 
+          </div>
+           <div class="phoof">
+             <div class="phoofan">
+               5% off
+             </div> 
+           </div>
+         </div>
+         <img src="perpho3.webp" class="phon1" alt="" srcset="">
+         <div class="imgbaaju">
+           <div class="imgbaaju1">From</div>
+           <div class="imgbaaju2"> <small>₹</small>31,999</div>
+           <div class="imgbaaju3"><small>₹</small>33,999</div>
+         </div>
+      </div>
+      
+      <div class="peranan phon">
+        <div class="phrt">
+          <div class="phrtan">
+            Redmi Note 13 Pro+
+ 
+          </div>
+           <div class="phoof">
+             <div class="phoofan">
+               5% off
+             </div> 
+           </div>
+         </div>
+         <img src="phon3.webp" class="phon1" alt="" srcset="">
+         <div class="imgbaaju">
+           <div class="imgbaaju1">From</div>
+           <div class="imgbaaju2"> <small>₹</small>31,999</div>
+           <div class="imgbaaju3"><small>₹</small>33,999</div>
+         </div>
+      </div>
+      
+      <div class="peranan phon">
+        <div class="phrt">
+          <div class="phrtan">
+            Redmi Note 13 Pro+
+ 
+          </div>
+           <div class="phoof">
+             <div class="phoofan">
+               5% off
+             </div> 
+           </div>
+         </div>
+         <img src="phon3.webp" class="phon1" alt="" srcset="">
+         <div class="imgbaaju">
+           <div class="imgbaaju1">From</div>
+           <div class="imgbaaju2"> <small>₹</small>31,999</div>
+           <div class="imgbaaju3"><small>₹</small>33,999</div>
+         </div>
+      </div>
+     
+      <div class="peranan phon">
+        <div class="phrt">
+          <div class="phrtan">
+            Redmi Note 13 Pro+
+ 
+          </div>
+           <div class="phoof">
+             <div class="phoofan">
+               5% off
+             </div> 
+           </div>
+         </div>
+         <img src="phon3.webp" class="phon1" alt="" srcset="">
+         <div class="imgbaaju">
+           <div class="imgbaaju1">From</div>
+           <div class="imgbaaju2"> <small>₹</small>31,999</div>
+           <div class="imgbaaju3"><small>₹</small>33,999</div>
+         </div>
+      </div> -->
+      
+      <!-- <div class="peranan phon">
+        <div class="phrt">
+          <div class="phrtan">
+            Redmi Note 13 Pro+
+ 
+          </div>
+           <div class="phoof">
+             <div class="phoofan">
+               5% off
+             </div> 
+           </div>
+         </div>
+         <img src="phon3.webp" class="phon1" alt="" srcset="">
+         <div class="imgbaaju">
+           <div class="imgbaaju1">From</div>
+           <div class="imgbaaju2"> <small>₹</small>31,999</div>
+           <div class="imgbaaju3"><small>₹</small>33,999</div>
+        </div>
+      </div> -->
+<!--       
+      <div class="peranan phon">
+        <div class="phrt">
+          <div class="phrtan">
+            Redmi Note 13 Pro+
+ 
+          </div>
+           <div class="phoof">
+             <div class="phoofan">
+               5% off
+             </div> 
+           </div>
+         </div>
+         <img src="phon3.webp" class="phon1" alt="" srcset="">
+         <div class="imgbaaju">
+           <div class="imgbaaju1">From</div>
+           <div class="imgbaaju2"> <small>₹</small>31,999</div>
+           <div class="imgbaaju3"><small>₹</small>33,999</div>
+         </div>
+      </div> -->
+      <!-- </div>
+    </div> -->
+    <!-- -----beauty-------- -->
+    <div class="butyban perban">
+      <img src="" alt=""  srcset="" />
+    </div>
+    <div class="pho8">
+  
+      <div class="furbaar ">
+        
+        <div class="phrt">
+         <div class="phrtan">
+           Ponds Super Light Gel Oil-Moisture with Hyaluronic..
+  
+         </div>
+          <div class="phoof">
+            <div class="phoofan">
+              15% off
+            </div> 
+          </div>
+        </div>
+        <img src="perpho4.avif" class="fas1" alt="" srcset="">
+        <div class="imgbaajufas">
+          <div class="imgbaaju1">From</div>
+          <div class="imgbaaju2"> <small>₹</small>168</div>
+          <div class="imgbaaju3"><small>₹</small>240</div>
+        </div>
+      </div>
+      <div class="furbaar">
+        <div class="phrt">
+          <div class="phrtan">
+           Dot & Key Vitamin C + Super Bright Face Moisturizer for..
+  
+          </div>
+           <div class="phoof">
+             <div class="phoofan">
+               13% off
+             </div> 
+           </div>
+         </div>
+         <img src="perpho5.avif" class="fas1" alt="" srcset="">
+         <div class="imgbaajufas">
+           <div class="imgbaaju1">From</div>
+           <div class="imgbaaju2"> <small>₹</small>431</div>
+           <div class="imgbaaju3"><small>₹</small>495</div>
+         </div>
+      </div>
+      <div class="furbaar">
+        <div class="phrt">
+          <div class="phrtan">
+           Burberry Goddess Eau de parfum
+  
+          </div>
+           <div class="phoof">
+             <div class="phoofan">
+               11% off
+             </div> 
+           </div>
+         </div>
+         <img src="perpho6.avif" class="fas1" alt="" srcset="">
+         <div class="imgbaajufas">
+           <div class="imgbaaju1">From</div>
+           <div class="imgbaaju2"> <small>₹</small>4,000</div>
+           <div class="imgbaaju3"><small>₹</small>5,300</div>
+         </div>
+      </div>
+      <div class="furbaar">
+        <div class="phrt">
+          <div class="phrtan">
+           M.A.C Connect in colour Eye Shadow Palette X6
+  
+          </div>
+           <div class="phoof">
+             <div class="phoofan">
+               32% off
+             </div> 
+           </div>
+         </div>
+         <img src="perpho7.avif" class="fas1" alt="" srcset="">
+         <div class="imgbaajufas">
+           <div class="imgbaaju1">From</div>
+           <div class="imgbaaju2"> <small>₹</small>3,900</div>
+           <div class="imgbaaju3"><small>₹</small>4,000</div>
+         </div>
+      </div>
+  
+    </div>
+    <!-- ----grocery start---------------------------------- -->
+    <div class=" groban">
+      <img src="" alt=""  srcset="" />
+    </div>
+    <div class="pho8">
+  
+      <div class="furbaar ">
+        
+        <div class="phrt">
+         <div class="phrtan">
+           Dragon Fruits(Loose) <br> 1pc (Approx 300g - 400g)
+  
+         </div>
+          <div class="phoof">
+            <div class="phoofan">
+              5% off
+            </div> 
+          </div>
+        </div>
+        <img src="gropho1.webp" class="fas1" alt="" srcset="">
+        <div class="imgbaajufas">
+          <div class="imgbaaju1">From</div>
+          <div class="imgbaaju2"> <small>₹</small>79</div>
+          <div class="imgbaaju3"><small>₹</small>103</div>
+        </div>
+      </div>
+      <div class="furbaar">
+        <div class="phrt">
+          <div class="phrtan">
+           Broccoli <br> 1pc (Approx 250g - 500g)
+  
+          </div>
+           <div class="phoof">
+             <div class="phoofan">
+               11% off
+             </div> 
+           </div>
+         </div>
+         <img src="gropho2.webp" class="fas1" alt="" srcset="">
+         <div class="imgbaajufas">
+           <div class="imgbaaju1">From</div>
+           <div class="imgbaaju2"> <small>₹</small>40</div>
+           <div class="imgbaaju3"><small>₹</small>53</div>
+         </div>
+      </div>
+      <div class="furbaar">
+        <div class="phrt">
+          <div class="phrtan">
+         Avocado Imported <br> 2pc 
+  
+          </div>
+           <div class="phoof">
+             <div class="phoofan">
+               6% off
+             </div> 
+           </div>
+         </div>
+         <img src="gropho3.webp" class="fas1" alt="" srcset="">
+         <div class="imgbaajufas">
+           <div class="imgbaaju1">From</div>
+           <div class="imgbaaju2"> <small>₹</small>160</div>
+           <div class="imgbaaju3"><small>₹</small>219</div>
+         </div>
+      </div>
+      <div class="furbaar">
+        <div class="phrt">
+          <div class="phrtan">
+           Capsicum-Green,
+            <br> Organically Grown(Loose)
+  
+          </div>
+           <div class="phoof">
+             <div class="phoofan">
+               3% off
+             </div> 
+           </div>
+         </div>
+         <img src="gropho4.webp" class="fas1" alt="" srcset="">
+         <div class="imgbaajufas">
+           <div class="imgbaaju1">From</div>
+           <div class="imgbaaju2"> <small>₹</small>68</div>
+           <div class="imgbaaju3"><small>₹</small>120</div>
+         </div>
+      </div>
+  
+    </div>
+    <div class="watban">
+<div class="watrt">
+  <div class="wat">WhatsApp</div>
+  <div class="stayrt">Join Us and Stay Updated</div>
+</div>
+    </div>
+    <div class="brocont">
+      Continue Browsing
+    </div>
+    <div class="contgri">
+      <div class="congri1 congri">
+        <div class="congrilkh">
+          <div class="congride">
+            <div class="congride1">Redmi buds 4 Active </div>
+            <div class="congride2"><div class="phoof">
+              <div class="phoofan">
+                32% off
+              </div> 
+            </div></div>
+          </div>
+          <div class="congripri">
+            <span class="congripri1">₹4,699</span>&nbsp; <span class="congripri2"><small>₹4,999</small></span>   
+          </div>
+        </div>
+        <div class="congrimg">
+          <img src="flipbudphoto.webp" alt="" class="budpho" srcset="">
+        </div>
+      </div>
+      <div class="congri2 congri">
+        <div class="congrilkh">
+          <div class="congride">
+            <div class="congride1">Redmi Watch 2 lite </div>
+            <div class="congride2"><div class="phoof">
+              <div class="phoofan">
+                20% off
+              </div> 
+            </div></div>
+          </div>
+          <div class="congripri">
+            <span class="congripri1">₹1,999</span>&nbsp; <span class="congripri2"><small>₹2,999</small></span>   
+          </div>
+        </div>
+        <div class="congrimg">
+          <img src="miwatch.webp" alt="" class="budpho miwatch" srcset="">
+        </div>
+
+
+      </div>
+      <div class="congri3 congri">
+        <div class="phrt">
+          <div class="phrtan">
+            Redmi Note 13 Pro
+ 
+          </div>
+           <div class="phoof">
+             <div class="phoofan">
+               10% off
+             </div> 
+           </div>
+         </div>
+         <img src="phon2.webp" class="phon1" alt="" srcset="">
+         <div class="imgbaaju">
+           <div class="imgbaaju1">From</div>
+           <div class="imgbaaju2"> <small>₹</small>25,999</div>
+           <div class="imgbaaju3"><small>₹</small>28,999</div>
+         </div>
+      </div>
+      <!-- </div> -->
+      <div class="congri4 congri">
+        <div class="phrt">
+          <div class="phrtan">
+            Xiaomi TV 5A 40 | Exclusive <br> Deal
+ 
+          </div>
+           <div class="phoof">
+             <div class="phoofan">
+               39% off
+             </div> 
+           </div>
+         </div>
+         <img src="tvpho1.webp" class="phon1" alt="" srcset="">
+         <div class="imgbaaju">
+           <div class="imgbaaju1">From</div>
+           <div class="imgbaaju2"> <small>₹</small>25,999</div>
+           <div class="imgbaaju3"><small>₹</small>42,999</div>
+         </div>
+      </div>
+      <div class="congri5 congri">
+        <div class="phrt">
+          <div class="phrtan">
+            Xiaomi Pad 5 6 GB 128 GB + <br> Smart Pen
+ 
+          </div>
+           <div class="phoof">
+             <div class="phoofan">
+               34% off
+             </div> 
+           </div>
+         </div>
+         <img src="padpho2.webp" class="phon1" alt="" srcset="">
+         <div class="imgbaaju">
+           <div class="imgbaaju1">From</div>
+           <div class="imgbaaju2"> <small>₹</small>31,999</div>
+           <div class="imgbaaju3"><small>₹</small>48,999</div>
+         </div>
+      </div>
+      <div class="congri6 congri">
+        <div class="phrt">
+          <div class="phrtan">
+            Redmi Note 13 Pro+
+ 
+          </div>
+           <div class="phoof">
+             <div class="phoofan">
+               5% off
+             </div> 
+           </div>
+         </div>
+         <img src="phon3.webp" class="phon1" alt="" srcset="">
+         <div class="imgbaaju">
+           <div class="imgbaaju1">From</div>
+           <div class="imgbaaju2"> <small>₹</small>31,999</div>
+           <div class="imgbaaju3"><small>₹</small>33,999</div>
+         </div>
+      </div>
+    </div>
+    <!-- ----------footer--------- -->
+    <div class="footer">
+      <div class="footan">
+        <div class="footrt">
+        <div class="footrt1 footrtan">
+          <div class="footrthd">SUPPORT</div>
+          <ul>
+<li>Online help</li>
+<li>Customer Service</li>
+<li>Shipping FAQ</li>
+<li>Warranty</li>
+<li>Flipkart Exchange</li>
+<li>Bulk Orders</li>
+<li>User Guide</li>
+<li>Laptop Drivers</li>
+<li>Flipkart Screen Protect</li>
+<li>Flipkart Extended Warranty</li>
+<li>Flipkart Complete Protect</li>
+<li>Certification</li>
+<li>Service Center</li>
+          </ul>
+        </div>
+        <div class="footrt2 footrtan">
+          <div class="footrthd">SHOP AND LEARN</div>
+          <ul>
+            <li>Grocery</li>
+            <li>Mobiles</li>
+            <li>Electronics</li>
+            <li>Fashion</li>
+            <li>Furniture</li>
+            <li>Home Appliances</li>
+            <li>Travel</li>
+            <li>Toys and Beauty</li>
+            <li>Two Wheeler</li>
+          </ul>
+        </div>
+        <div class="footrt3 footrtan">
+          <div class="footrthd">RETAIL STORE</div>
+          <ul>
+            <li>Flipkart Home</li>
+            <li>Flipkart Authorized Store</li>
+            <li>Flipkart Store Franchise</li>
+          </ul>
+        </div>
+        <div class="footrt4 footrtan">
+          <div class="footrthd">ABOUT US</div>
+          <ul>
+            <li>Flipkart</li>
+            <li>Privacy Policy</li>
+            <li>User Agreement</li>
+            <li>Integrity & Compliance</li>
+            <li>CSR and Disclosures</li>
+            <li>E-Waste Management</li>
+            <li>In the Press</li>
+            <li>Trust Center</li>
+            <li>Culture</li>
+            <li>Product Quality</li>
+            <li>Service Quality</li>
+            <li>Join Our Team</li>
+          
+          </ul>
+        </div>
+        </div>
+        <div class="footimg">
+<div class="fol">Follow Flipkart
+  <div class="ico"><i class="fa-brands fa-square-facebook icofo"></i> <i class="fa-brands fa-square-x-twitter icofo"></i> <i class="fa-brands fa-square-instagram icofo"></i></div>
+</div>
+<div class="emad">
+  <div class="fotlet">Let's Stay in touch</div>
+<input type="text" name="" class="footext" id="" placeholder="Enter email address"><i class="fa-solid fa-chevron-right footang"></i>
+</div>
+<div class="qrco">
+  <img src="qrcode.png" class="qrimg" alt="" srcset="">
+  <div class="footrthd">Get Flipkart App
+    <div class="footscan">Scan for our up-to-date information <br> for better shopping experience</div>
+  </div>
+
+</div>
+<div class="qrcoan"><img src="play.svg" alt="" class="playimg" srcset="">Download on Google play</div>
+        </div>
+      </div>
+      <hr class="foothr">
+      <div class="footend">
+<span class="copy">Copyright ©️ 2010-2024 Flipkart.All Rights Reserved</span>
+<span class="sit">Sitemap</span>
+<span class="india">India / India</span>
+      </div>
+    </div>
+    <a href="#nav2">
+      
+
+        <div class="rest"><i class="fa-solid fa-arrow-up art"></i>
+          <i class="fa-solid fa-arrow-up fa-bounce art2"></i>
+        </div>
+      
+    </a>
+    <div>
+    
+  </body>
+</html>

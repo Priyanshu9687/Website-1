@@ -1,0 +1,375 @@
+.mobiles{
+    padding: 0px;
+    margin: 0px;
+    height:800vh;
+    width: 100vw;
+    background-color:#F7F7F7;
+    position: absolute;
+      top: 200px;;
+      z-index: 4;
+      display: none;
+}
+.leica{
+    background-image: url(leicapho.webp);
+    background-size: cover;
+    height: 600px;
+    width: 100vw;
+}
+.leilkh{
+    height: 286px;
+    display: grid;
+    width: 520px;
+    grid-template-rows: 50px 52px 82px;
+    top: 430px;
+    left: 115px;
+    position: absolute;
+}
+.leilkh1{
+    font-family: 'Xiaomi Brand', 'Camphor Pro', sans-serif  ;
+    font-weight: bold !important;
+    font-size: 42px;
+}
+.leilkh2{
+    font-size: 28px;
+}
+.leilkh3{
+    height: 42px;
+    width: 159px;
+    margin-top: 28px;
+    padding: 9px 29px;
+    background-color: #191919;
+    color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 19px;
+    border: 1px solid transparent;
+}
+.leilkh3:hover{
+    background-color: #2e2d2d;
+    cursor: pointer;
+}
+.moback{
+    /* background-color: #191919; */
+    color: black;
+    width: 45px;
+    height: 35px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 20px;
+    background: transparent;
+    /* background: transparent; */
+    position: absolute;
+    top: 5px;
+}
+.moback:hover{
+    cursor: pointer;
+}
+.xiamobaar{
+    display: grid;
+    grid-template-columns:repeat(4,359px);
+padding: 16px;
+height: 1716px;
+width: 99vw;
+grid-row-gap: 15px;
+grid-column-gap: 15px;
+grid-template-rows: repeat(3,551px);
+/* padding-left: 25px; */
+/* box-sizing: border-box; */
+box-sizing: border-box;
+    position: absolute;
+    left: 10px;
+    background-color: #F7F7F7;
+}
+.xiamo1{
+    width: 733px;
+    height: 551px;
+grid-column-start: 1;
+grid-column-end: 3;
+padding: 28.8px;
+box-sizing: border-box;
+display: grid;
+grid-template-rows: 170px 80px 241px;
+}
+.xiamo1un{
+    width: 205.15px;
+    height: 139px;
+    margin: 43px 236px 9.6px;
+    display: flex;
+    align-items: center;
+    /* display: flex;
+    align-items: center; */
+    justify-content: center;
+}
+.xiamo1un1{
+    font-size: 27.8px;
+    color: #191919;
+    /* font-weight: 700; */
+    font-family: "Camphor Pro", sans-serif;
+    margin: 0px;
+}
+.xiamo1un2{
+    font-size: 14px;
+    color: #191919;
+    margin: 4.8px 0px 0px 0px; 
+    display: flex;
+    justify-content: center; 
+    position: relative;
+    bottom: 15px;
+}
+.xiamopho1an{
+
+    height: 240px;
+}
+.xiamolkh{
+
+    width: 122px;
+    height: 33px;
+    padding: 7px 24px;
+    font-size: 14px;
+    position: relative;
+    left: 275px;
+}
+.xiamopho{
+    
+    display: flex;
+        justify-content: center;
+}
+.xiamo{
+
+    background-color:#ffffff;
+}
+.xiamo2{
+    width: 733px;
+    height: 551px;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    padding: 28.8px;
+box-sizing: border-box;
+display: grid;
+grid-template-rows: 170px 80px 241px;
+    }
+    .xiamo3{
+        width: 733px;
+        height: 551px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding: 28.8px;
+box-sizing: border-box;
+display: grid;
+grid-template-rows: 170px 80px 241px;
+        }
+        /* .xiamo{
+            background-color: #484848;
+        } */
+        .xiamo4{
+            width: 733px;
+            height: 551px;
+            grid-column-start: 3;
+            grid-column-end: 5;
+            padding: 28.8px;
+box-sizing: border-box;
+display: grid;
+grid-template-rows: 170px 80px 241px;
+            }
+            .xiamo5{
+                width: 359px;
+                height: 551px;
+                padding: 28.8px;
+box-sizing: border-box;
+display: grid;
+grid-template-rows: 170px 80px 241px;
+            }
+            .xiamo6{width: 359px;
+                height: 551px;
+                box-sizing: border-box;
+                display: grid;
+                padding: 28.8px;
+                grid-template-rows: 170px 80px 241px;
+            }
+            .xiamo7{width: 359px;
+                height: 551px;
+                box-sizing: border-box;
+                display: grid;
+                padding: 28.8px;
+                grid-template-rows: 170px 80px 241px;
+            }
+            .xiamo8{width: 359px;
+                height: 551px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            }
+            .xiamo811{
+                display: grid;
+                grid-template-rows: 70px;
+            }  
+                .xiamo5un{
+                    margin: 43px 59px 9px;
+                }
+                /* .xiamo1un{
+                    height: 139.2px;
+                    width: 205.15;
+            } */
+            .xiamolkh5{
+position: relative;
+left: 100px;
+            }
+            .xiamo82{
+                /* height: 100px; */
+                display: flex;
+                justify-content: center;
+                font-size: 60px;
+            }
+            .xiamo82:hover{
+                color: blue;
+            }
+            .xiamo81{
+font-size: 32px;
+            }
+            .xiamo822{
+height: 100px;
+            }
+            .xiamo:hover{
+                box-shadow: 0px 0px 15px -5px rgb(201, 201, 201);
+                cursor: pointer;
+            }
+            .leicaupr{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }  
+            .leicaupr1{
+                height: 119px;
+                width: 187px;
+                margin: 38.5px 132px;
+            }     
+            .leicaupr12{
+                font-size: 28px;
+                font-weight: 700;
+                font-family: 'Camphor Pro', sans-serif;
+            }
+            .leicaupr13{
+                font-size: 14px;
+            }
+            .leicaupr14{
+                height: 38px;
+                width: 98.75px;
+                padding: 9.6px 32px;
+                font-size: 14px;
+                position: absolute;
+                right: 722px;
+                margin-top: 45px;
+                border: 1px solid transparent;
+            }
+            .redmupr{
+                position: absolute;
+                top: 2514px;
+                height: 196px;
+                width: 100vw;
+                display: flex;
+                /* background-color: #191919; */
+                justify-content: center;
+                align-items: center;
+            }    
+            .redmiupr1{
+                height: 119px;
+                width: 187px;
+                margin: 38.5px 132px;
+            }
+            .redmiupr13{
+            line-height: 2;
+    position: relative;
+    left: 14px;
+        }    
+      .redmiban{
+        height: 600px;
+        width: 100vw;
+        /* background-color: #191919; */
+        position: absolute;
+        top: 2700px;
+        background-image: url(redmiban.webp);
+        background-size:cover;
+        
+        /* background-attachment:fixed ; */
+/* background-position:50px 0px; */
+background-repeat: no-repeat;
+      } 
+      .redlkh{
+        position: absolute;
+        top:210px;
+        left: 40px;
+        height: 298px;
+        width: 520px;
+        grid-template-rows: 39px 52px 82px;
+
+      }
+      .redlkh2{
+        font-size: 28px;
+      }
+      .leikh1{
+        height: 28px;
+        width: 520px;
+      }
+.redlkh3{
+    height: 42px;
+    width: 159px;
+    font-size: 19px;
+    padding: 9px 30px;
+}
+.redmibaar{
+    display: grid;
+    grid-template-columns:repeat(4,359px);
+padding: 16px;
+height: 1150px;
+width: 99vw;
+grid-row-gap: 15px;
+grid-column-gap: 15px;
+grid-template-rows: repeat(2,551px);
+/* padding-left: 25px; */
+/* box-sizing: border-box; */
+box-sizing: border-box;
+    position: absolute;
+    left: 10px;
+    position: absolute;
+    top: 3290px;
+    background-color: #F7F7F7;
+}
+.redmi{
+    background-color:#ffffff;
+    width: 359px;
+                height: 551px;
+                box-sizing: border-box;
+                display: grid;
+                padding: 28.8px;
+                grid-template-rows: 170px 80px 241px;
+}
+.redmi:hover{
+    box-shadow: 0px 0px 15px -5px rgb(201, 201, 201);
+    cursor: pointer;
+}
+.ju{
+    height: 500px;
+    width: 500px;
+    background-color: #191919;
+}
+.red1un1{
+    width: 305px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+.redmi8{
+    display: flex;
+            align-items: center;
+            justify-content: center;
+}
+.mofoot{
+    position: absolute;
+    bottom:710px;
+}
+/* --------------for mobile---------- */
+@media (max-width: 932px) {
+    nav{
+        display: none;
+    }
+ }
